@@ -181,3 +181,48 @@ h1 {
    text-decoration: none;
 }
 
+/* About Section */
+
+#about-me {
+   margin: 8em 7.5em 0 5.625em;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.about-img {
+   width: 80%;
+   height: auto;
+   /* Adjust the width as needed */
+   /* text-align: right; */
+}
+
+.about-text {
+
+   color: gray;
+   font-size: 1.1em;
+   font-weight: 100;
+   width: 50%;
+   margin-left: 2px;
+   margin-bottom: 5px;
+   line-height: 1.5em;
+}
+
+h2 {
+   color: #ffff;
+   font-size: 2.2em;
+   margin-bottom: .55em;
+}
+
+
+li.skills {
+   color: #ffff;
+   font-size: 1.15em;
+   margin: 1.2em 0 .70em -1em;
+   list-style-type: none;
+}
+
+ul.skills {
+   margin: 6.3px 0 1.3em 1.20em;
+   color: var(--mid-gray);
+}
