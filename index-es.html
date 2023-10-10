@@ -1,62 +1,91 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <script src="https://kit.fontawesome.com/2ed8dc2e6c.js" crossorigin="anonymous"></script>
    <link rel="stylesheet" href="style.css">
-
-   <title>Profile Site</title>
+   <title>My 2024 Website</title>
 </head>
+
 <body>
-   <main>
-      <section id="nav">
-         <img id="logo" src="images/fdlt-logo.PNG" alt="logo">
-         <div class="nav-bar">
-            <div class="links">
-               <ul>
-                  <li class="language-link en">
-                     <a href="index.html">En<span class="flag-icon"></span></a>
-                  </li>
-                  <li class="language-link sp">
-                     <a href="index-es.html">Es<span class="flag-icon"></span></a>
-                  </li>
-                  <li><a href="#projects" id="project" style="margin-left: 100px;">Projects</a></li>
-                  <li><a href="#aboutme" id="about">About Me</a></li>
-                  <li><a href="#contactme" id="contact">Contact</a></li>
-               </ul>
-            </div>
-         </div>
-      </section>
-      <!-- <section id="nav">
-         <div class="nav-bar">
-            <div class="links">
-               
-               <ul>
-                  <li>About</li>
-                  <li>Projects</li>
-                  <li>Contact</li>
-               </ul>
-            </div>
-         </div>
-      </section> -->
-      <div>
-         <!-- Content for the main section goes here -->
+   <!-- Desktop Nav -->
+   <section id="nav">
+      <img class="logo" src="images/fdlt-logo.PNG" alt="logo">
+      <div class="lang-links">
+         <li class="language-link en">
+            <a href="index.html">En<span class="flag-icon"></span></a>
+         </li>
+         <li class="language-link sp">
+            <a href="index-es.html">Es<span class="flag-icon"></span></a>
+         </li>
       </div>
-      <section id="about">
-         <!-- About section content goes here -->
-      </section>
-      <div id="projects">
-         <!-- Projects section content goes here -->
+      <div class="nav-bar">
+         <div class="links">
+            <ul>
+               <li><a href="#aboutme" id="about">About</a></li>
+               <li><a href="#projects" id="project">Projects</a></li>
+               <li><a href="#contactme" id="contact">Contact</a></li>
+            </ul>
+         </div>
       </div>
-      <section id="contact">
-         <!-- Contact section content goes here -->
-      </section>
-   </main>
+   </section>
+
+   <!-- Content for the main section goes here -->
+   <section id="hello-intro">
+      <div class="intro-text">
+         <h1>Hola, Soy</h1><br>
+         <span class="name">Fernando De La Torre</span>
+         <p>Welcome to my portfolio site, where you can explore my journey as a Software Engineer and Developer,
+            showcasing my proficiency in a wide range of web development technologies.</p>
+         <div class="intro-links">
+            <a href="#hire" class="hire">Hire Me</a>
+            <a href="images/Resume-FDLT-Oct-2023.pdf" target="_blank" class="resume-cta"><span
+                  class="resume-text">Download CV</span></a>
+         </div>
+      </div>
+      <div class="intro-img">
+         <img src="images/Main-hero.png" alt="Image">
+      </div>
+   </section>
+
+   <!-- About Section -->
+   <section id="about-me">
+      <div class="about-img">
+         <img src="images/fdlt-logo.PNG" alt="Image">
+      </div>
+      <div class="about-text">
+         <h2>About Me</h2>
+         <p>As a bilingual Software Engineer, I seamlessly blend technical expertise with a passion for teaching.
+            With a successful
+            track record spanning both front-end and back-end development, I've harnessed the power of HTML5, CSS3,
+            JavaScript,
+            React, Node.js, and MongoDB to craft efficient and innovative software solutions.
+            My ability to communicate and collaborate effectively in both English and Spanish opens doors to diverse
+            partnerships
+            and opportunities. I take pride in not just using these tools but wielding them to create elegant, robust
+            software.
+            Let's connect and explore how my unique combination of technical proficiency and teaching
+            enthusiasm can elevate your
+            organization to new heights of success.
+         </p>
+         <ul class="skills">
+            <li class="skills">My Skills</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Python</li>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>MongoDB</li>
+            <li>GitHub</li>
+            <li>Figma</li>
+         </ul>
+      </div>
+   </section>
    <footer>
       <!-- Footer content goes here -->
    </footer>
+   <script src="main.js"></script>
 </body>
 
 </html>
