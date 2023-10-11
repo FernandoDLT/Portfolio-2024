@@ -10,6 +10,7 @@
    --blue-text: #86ddff;
    --dark-blue: #002b8f;
    --mid-blue: #3ba0ff;
+   --cool-blue: #1166C0;
    /* --mid-gray: #173 #183 #190/var(--tw-text-opacity) */
 }
 
@@ -26,7 +27,7 @@ body {
    justify-content: space-between;
    align-items: center;
    padding: 0.125em;
-   color: #ADB7B9;
+   color: var(--gray-text);
    border-bottom: 0.025em solid #33353f;
    position: fixed;
    top: 0;
@@ -121,16 +122,19 @@ img.logo {
 }
 
 .intro-img img {
-   width: 100%;
+   /* width: 120%;
+   height: auto; */
+   width: 45em;
    height: auto;
    display: block;
-   margin: 0 -2em 0;
+   margin: 0 -4em 0;
 }
 
 h1 {
    font-size: 3.625em;
    font-weight: 700;
-   color: var(--mid-blue);
+   /* color: var(--mid-blue); */
+   color: #1166C0;
    margin-bottom: -.48em;
 }
 
@@ -141,7 +145,7 @@ h1 {
 }
 
 #hello-intro p {
-   color: #ADB7B9;
+   color: var(--gray-text);
    font-size: 1.25em;
    width: 33em;
    margin-top: .25em;
@@ -160,7 +164,7 @@ h1 {
    color: #ffff;
    padding: 1.10em 1.55em;
    margin-right: 0.875em;
-   background: linear-gradient(5deg, var(--blue-text), var(--dark-blue));
+   background: linear-gradient(5deg, var(--blue-text), #1166C0);
    border: none;
    border-radius: 2.5rem;
    text-decoration: none;
@@ -171,7 +175,7 @@ h1 {
    color: #ffff;
    padding: 1.10em 1.55em;
    margin-right: 0.875em;
-   background: linear-gradient(5deg, var(--blue-text), var(--dark-blue));
+   background: linear-gradient(5deg, var(--blue-text), #1166C0);
    border: none;
    border-radius: 2.5rem;
    text-decoration: none;
@@ -179,7 +183,7 @@ h1 {
 
 /* About Section */
 #about-me {
-   margin: 8em 7.5em 0 5.625em;
+   margin: 8em 3.5em 0 5.625em;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -189,30 +193,19 @@ h1 {
    width: 50%;
 }
 
-/* .about-img img {
-   max-width: 100%;
-   height: auto;
-   display: block;
-   padding-left: 13em;
-   margin: 0 -2em 0;
-} */
-
-
 .about-img img {
-   width: 80%;
-   /* Increase the width to make it wider */
-   height: auto;
-   /* Maintain the aspect ratio to prevent distortion */
+   width: 100%;
+   height: 40%;
    display: block;
    margin: 0 auto;
-   /* Center the image horizontally */
 }
+
 .about-text {
-   color: gray;
+   color: var(--gray-text);
    font-size: 1.1em;
    font-weight: 100;
-   width: 57%;
-   padding-left: 5em;
+   width: 65%;
+   padding-left: 8em;
    margin-bottom: 5px;
    line-height: 1.5em;
 }
@@ -226,11 +219,26 @@ h2 {
 li.skills {
    color: #ffff;
    font-size: 1.15em;
-   margin: 1.2em 0 .70em -1em;
+   margin: 1.2em 0;
    list-style-type: none;
+   position: relative;
+}
+
+li.skills::after {
+   content: "";
+   display: block;
+   border-bottom: .18em solid var(--cool-blue);
+   /* Adjust the thickness and color of the underline */
+   margin-top: .28em;
+   width: 4em;
+   /* Adjust the spacing between text and underline */
 }
 
 ul.skills {
-   margin: 6.3px 0 1.3em 1.20em;
+   margin: 6.3px 0 1.3em .10em;
    color: var(--mid-gray);
+}
+
+li::marker {
+   color: var(--cool-blue);
 }
