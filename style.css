@@ -28,6 +28,7 @@ body {
    padding: 0.125em;
    color: var(--gray-text);
    border-bottom: 0.025em solid #33353f;
+   box-shadow: 0em .0em .995em rgba(141, 150, 235, 0.836);
    position: fixed;
    top: 0;
    left: 0;
@@ -284,7 +285,7 @@ hr {
    width: 20em;
    background-color: #fff;
    position: relative;
-   box-shadow: -0.9375em 0.4375em 1.875em rgba(141, 150, 235, 0.836);
+   box-shadow: -.25em 0.4375em .95em rgba(141, 150, 235, 0.836);
    border-radius: 0.625em;
    margin: 3.125em;
 }
@@ -294,7 +295,6 @@ hr {
    height: 18.875em;
    background-color: #fff;
    position: relative;
-   box-shadow: -0.9375em 0.4375em 1.875em rgba(0, 0, 0, 0.2);
    border-radius: 0.625em;
    background-image: url(images/huddle.png);
    background-size: 100%;
@@ -306,7 +306,6 @@ hr {
    height: 18.75em;
    background-color: #fff;
    position: relative;
-   box-shadow: -0.9375em 0.4375em 1.875em rgba(0, 0, 0, 0.2);
    border-radius: 0.625em;
    background-image: url(images/base-apprl.png);
    background-size: 100%;
@@ -318,7 +317,6 @@ hr {
    height: 18.75em;
    background-color: #fff;
    position: relative;
-   box-shadow: -0.9375em 0.4375em 1.875em rgba(0, 0, 0, 0.2);
    border-radius: 0.625em;
    background-image: url(images/newsletter.png);
    background-size: cover;
@@ -330,7 +328,6 @@ hr {
    height: 18.75em;
    background-color: #fff;
    position: relative;
-   box-shadow: -0.9375em 0.4375em 1.875em rgba(0, 0, 0, 0.2);
    border-radius: 0.625em;
    background-image: url(images/fylo.png);
    background-size: 100%;
@@ -343,7 +340,6 @@ hr {
    height: 18.75em;
    background-color: #fff;
    position: relative;
-   box-shadow: -0.9375em 0.4375em 1.875em rgba(0, 0, 0, 0.2);
    border-radius: 0.625em;
    background-image: url(images/cc-details.png);
    background-size: cover;
@@ -355,7 +351,6 @@ hr {
    height: 18.75em;
    background-color: #fff;
    position: relative;
-   box-shadow: -0.9375em 0.4375em 1.875em rgba(0, 0, 0, 0.2);
    border-radius: 0.625em;
    background-image: url(images/time-tracker.png);
    background-size: cover;
@@ -367,7 +362,6 @@ hr {
    height: 18.75em;
    background-color: #fff;
    position: relative;
-   box-shadow: -0.9375em 0.4375em 1.875em rgba(0, 0, 0, 0.2);
    border-radius: 0.625em;
    background-image: url(images/social-proof.png);
    background-size: 100%;
@@ -380,7 +374,6 @@ hr {
    height: 18.75em;
    background-color: #fff;
    position: relative;
-   box-shadow: -0.9375em 0.4375em 1.875em rgba(0, 0, 0, 0.2);
    border-radius: 0.625em;
    background-image: url(images/four-card.png);
    background-size: cover;
@@ -392,7 +385,6 @@ hr {
    height: 18.75em;
    background-color: #fff;
    position: relative;
-   box-shadow: -0.9375em 0.4375em 1.875em rgba(0, 0, 0, 0.2);
    border-radius: 0.625em;
    background-image: url(images/bucket-list.png);
    background-size: 100%;
@@ -405,7 +397,6 @@ hr {
    height: 18.75em;
    background-color: #fff;
    position: relative;
-   box-shadow: -0.9375em 0.4375em 1.875em rgba(0, 0, 0, 0.2);
    border-radius: 0.625em;
    background-image: url(images/clipboard.png);
    background-size: 100%;
@@ -475,7 +466,6 @@ footer {
    justify-content: space-between;
    align-items: center;
    width: 100%;
-   padding: 10px;
    border-top: 1px solid #33353f;
    border-bottom: 1px solid #33353f;
 }
