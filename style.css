@@ -41,7 +41,7 @@ body {
 img.logo {
    width: 5em;
    height: 5em;
-   margin-left: 6.625em;
+   margin-left: 5.5em;
    border-radius: 50%;
 }
 
@@ -219,7 +219,7 @@ h1 {
    line-height: 1.5em;
 }
 
-h2 {
+.about-text h2 {
    color: #ffff;
    font-size: 2.2em;
    margin-bottom: .55em;
@@ -256,6 +256,7 @@ li::marker {
 .project-container {
    width: 100%;
    height: auto;
+   margin-bottom: 100px;
 }
 
 .project-header {
@@ -452,7 +453,7 @@ h2.name {
    width: 200px;
    box-shadow: -0.9375em 0.4375em 1.875em rgba(0, 0, 0, 0.2);
    padding: 0.9375em;
-   border-radius: 0.3125em;
+   border-radius: 0.5125em;
    margin: 18px auto 25px;
    display: flex;
    justify-content: center;
@@ -464,6 +465,199 @@ h3 {
    color: var(--cool-blue);
    list-style-type: none;
    font-size: 1.55em;
+}
+
+
+
+#bottom {
+   display: flex;
+   justify-content: space-around;
+   align-items: top;
+   color: #ffff;
+   margin: 4.55em;
+}
+
+#bottom h2 {
+   font-size: 2.22em;
+   padding-bottom: .25em;
+}
+
+#bottom p {
+   width: 30em;
+   margin-top: -2.5em;
+   margin-bottom: 1em;
+   letter-spacing: .02em;
+   color: var(--gray-text);
+   line-height: 1.5em;
+}
+
+.bottom-text {
+   width: 50%;
+   margin-top: 2.5em;
+}
+
+.social-icons {
+   display: flex;
+   font-size: 2.2em;
+   color: #ffff;
+   gap: 0.55em;
+}
+
+.social-icons i {
+   color: #ffff;
+}
+
+.social-icons i:hover {
+   color: var(--cool-blue);
+}
+
+.social-icons a {
+   display: inline-block;
+   transition: transform 0.25s ease-in-out;
+}
+
+.social-icons a:hover {
+   transform: rotateY(360deg) scale(1.4);
+}
+
+
+
+/* Form */
+
+
+.form {
+   margin: 0 auto;
+   position: relative;
+   align-items: center;
+   width: 684px;
+   height: 446px;
+   background-color: #080808;
+   /* box-shadow: .05em .5em 5em rgba(104, 98, 98, 0.6); */
+   border-radius: 50px 5px;
+   overflow: hidden;
+}
+
+.form label {
+   color: white;
+   font-size: .90em;
+   padding-bottom: .625em;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+   position: absolute;
+   inset: .045em;
+   border-radius: 50px 5px;
+   background-color: #080808;
+   z-index: 10;
+   padding: 50px 30px;
+}
+
+.form::before {
+   content: '';
+   position: absolute;
+   top: -50%;
+   left: -50%;
+   width: 650px;
+   height: 650px;
+   background: linear-gradient(60deg, var(--blue-text), var(--blue-text));
+   transform-origin: bottom right;
+   animation: animate 6s linear infinite;
+}
+
+.form::after {
+   content: '';
+   position: absolute;
+   top: -50%;
+   left: -50%;
+   width: 650px;
+   height: 650px;
+   background: linear-gradient(60deg, var(--cool-blue), var(--cool-blue));
+   transform-origin: bottom right;
+   animation: animate 6s linear infinite;
+   animation-delay: -3s;
+}
+
+.form.show-message::before,
+.form.show-message::after {
+   display: none;
+}
+
+/* Box animation */
+@keyframes animate {
+   0% {
+      transform: rotate(0deg);
+   }
+
+   100% {
+      transform: rotate(360deg);
+   }
+}
+
+.form {
+   animation: fadeIn 1s ease-in-out;
+}
+
+.form.show-message {
+   animation: none;
+}
+
+.form input {
+   /* Common styles for all input elements within the .form */
+   width: 100%;
+   padding: 10px;
+   margin-bottom: 10px;
+   border: 1.5px solid #33353f;
+   border-radius: 5px;
+   font-size: 1em;
+}
+
+#email {
+   /* Styles specific to the email input */
+   background-color: #18191E;
+   color: #ffff;
+   margin-bottom: 1.65em;
+}
+
+#subject {
+   /* Styles specific to the subject input */
+   background-color: #18191E;
+   color: #ffff;
+   margin-bottom: 1.65em;
+}
+
+textarea {
+   /* Styles for textareas within the form */
+   width: 100%;
+   font-size: 1em;
+   padding: 10px;
+   margin-bottom: 2.5em;
+   border: 1px solid #33353f;
+   color: #ffff;
+   background-color: #18191E;
+   border-radius: 5px;
+   resize: vertical;
+}
+
+button {
+   /* Styles for the submit button */
+   /* background-color: var(--cool-blue); */
+   background: linear-gradient(5deg, var(--blue-text), var(--cool-blue));
+   color: #fff;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 16px;
+}
+
+/* Additional styling for when input elements are in focus (clicked) */
+.form input:focus,
+.form textarea:focus {
+   outline: none;
+   border-color: #0074a2;
+   box-shadow: 0 0 5px rgba(0, 116, 162, 0.5);
 }
 
 footer {
@@ -487,3 +681,6 @@ footer {
    color: #315569;
    font-size: 14px;
 }
+
+
+
