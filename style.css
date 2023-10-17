@@ -1,0 +1,228 @@
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+
+:root {
+   --base-font-size: 16px;
+   --blue-text: #86ddff;
+   --dark-blue: #002b8f;
+   --mid-blue: #3ba0ff;
+   --mid-gray: #173 #183 #190/var(--tw-text-opacity)
+}
+
+body {
+   background-color: #080808;
+   font-family: Arial, sans-serif;
+   font-size: 1em;
+}
+
+
+/* Nav Desktop */
+#nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0.125em;
+   color: #ADB7B9;
+   border-bottom: 0.025em solid #33353f;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background-color: #080808;
+   z-index: 100;
+}
+
+/* Logo */
+img#logo {
+   width: 5em;
+   height: 5em;
+   margin-left: 6.625em;
+   border-radius: 50%;
+}
+
+.lang-links {
+   display: flex;
+   gap: 1.875em;
+   list-style: none;
+}
+
+.language-link {
+   position: relative;
+}
+
+.flag-icon {
+   display: inline-block;
+   width: 2.425em;
+   height: 2.425em;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   opacity: 0;
+   position: absolute;
+   top: 50%;
+   left: .585em;
+   transform: translate(-50%, -50%) scale(0);
+   transition: opacity 0.3s, transform 0.3s;
+}
+
+.language-link.en:hover .flag-icon {
+   background-image: url(images/us-flag.png);
+   transform: translate(-50%, -50%) scale(1);
+   opacity: 1;
+}
+
+.language-link.sp:hover .flag-icon {
+   background-image: url(images/spain-icon.png);
+   transform: translate(-50%, -50%) scale(1);
+   opacity: 1;
+}
+
+#nav ul {
+   list-style: none;
+   display: flex;
+   margin-right: 3em;
+   gap: 2.4em;
+}
+
+#nav li {
+   font-size: 1.255em;
+}
+
+
+#nav li a {
+   text-decoration: none;
+   color: var(--mid-gray);
+}
+
+#nav li a:hover {
+   color: #ffff;
+}
+
+
+/* Intro */
+#hello-intro {
+   margin: 10em 0 0 5.625em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+.intro-text {
+   width: 55%;
+   /* Adjust the width as needed */
+}
+
+.intro-img {
+   width: 60%;
+   height: auto;
+   /* Adjust the width as needed */
+   text-align: right;
+}
+
+.intro-img img {
+   max-width: 100%;
+   height: auto;
+   display: block;
+   /* Ensure the image is a block-level element for better alignment */
+   margin: 0 -2em 0;
+   /* Center the image horizontally */
+}
+
+h1 {
+   font-size: 3.625em;
+   font-weight: 700;
+   color: var(--mid-blue);
+   margin-bottom: -.48em;
+}
+
+.name {
+   color: #ffff;
+   font-size: 3.90em;
+   font-weight: 700;
+}
+
+#hello-intro p {
+   color: #ADB7B9;
+   font-size: 1.25em;
+   width: 33em;
+   margin-top: .25em;
+   line-height: 1.25em;
+   margin: .40em 0 3em;
+}
+
+/* Intro Links */
+
+.intro-links {
+   margin: 2em .68em 0 0;
+}
+
+
+/* Hire Link */
+.hire {
+   color: #ffff;
+   padding: 1.10em 1.55em;
+   margin-right: 0.875em;
+   background: linear-gradient(5deg, var(--blue-text), var(--dark-blue));
+   border: none;
+   border-radius: 2.5rem;
+   text-decoration: none;
+}
+
+/* Resume Link */
+.resume-cta {
+   color: #ffff;
+   padding: 1.10em 1.55em;
+   margin-right: 0.875em;
+   background: linear-gradient(5deg, var(--blue-text), var(--dark-blue));
+   border: none;
+   border-radius: 2.5rem;
+   text-decoration: none;
+}
+
+/* About Section */
+
+#about-me {
+   margin: 8em 7.5em 0 5.625em;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.about-img {
+   width: 80%;
+   height: auto;
+   /* Adjust the width as needed */
+   /* text-align: right; */
+}
+
+.about-text {
+
+   color: gray;
+   font-size: 1.1em;
+   font-weight: 100;
+   width: 50%;
+   margin-left: 2px;
+   margin-bottom: 5px;
+   line-height: 1.5em;
+}
+
+h2 {
+   color: #ffff;
+   font-size: 2.2em;
+   margin-bottom: .55em;
+}
+
+
+li.skills {
+   color: #ffff;
+   font-size: 1.15em;
+   margin: 1.2em 0 .70em -1em;
+   list-style-type: none;
+}
+
+ul.skills {
+   margin: 6.3px 0 1.3em 1.20em;
+   color: var(--mid-gray);
+}
