@@ -19,6 +19,10 @@ body {
    font-size: 1em;
 }
 
+html {
+   scroll-behavior: smooth;
+}
+
 
 /* Nav Desktop */
 #nav {
@@ -49,6 +53,7 @@ img.logo {
    display: flex;
    gap: 1.875em;
    list-style: none;
+   margin-left: 2em;
 }
 
 .language-link {
@@ -282,6 +287,7 @@ hr {
    align-items: center;
    justify-content: center;
    flex-flow: wrap;
+   scroll-behavior: smooth;
 }
 
 .project-item {
@@ -521,10 +527,7 @@ h3 {
 }
 
 
-
 /* Form */
-
-
 .form {
    margin: 0 auto;
    position: relative;
@@ -532,15 +535,16 @@ h3 {
    width: 684px;
    height: 446px;
    background-color: #080808;
-   /* box-shadow: .05em .5em 5em rgba(104, 98, 98, 0.6); */
+   box-shadow: .05em .5em 5em rgba(104, 98, 98, 0.6);
    border-radius: 50px 5px;
    overflow: hidden;
 }
 
 .form label {
-   color: white;
-   font-size: .90em;
+   color: #ffff;
+   font-size: .95em;
    padding-bottom: .625em;
+   letter-spacing: .04em;
 }
 
 form {
@@ -613,24 +617,18 @@ form {
    font-size: 1em;
 }
 
-#email {
-   /* Styles specific to the email input */
-   background-color: #18191E;
-   color: #ffff;
-   margin-bottom: 1.65em;
-}
-
-#subject {
+ #email, #subject {
    /* Styles specific to the subject input */
    background-color: #18191E;
    color: #ffff;
    margin-bottom: 1.65em;
+   letter-spacing: .05em;
 }
 
 textarea {
    /* Styles for textareas within the form */
    width: 100%;
-   font-size: 1em;
+   font-size: 1.25em;
    padding: 10px;
    margin-bottom: 2.5em;
    border: 1px solid #33353f;
@@ -643,9 +641,9 @@ textarea {
 button {
    /* Styles for the submit button */
    /* background-color: var(--cool-blue); */
-   background: linear-gradient(5deg, var(--blue-text), var(--cool-blue));
+   background: var(--cool-blue);
    color: #fff;
-   padding: 10px 20px;
+   padding: 1em;
    border: none;
    border-radius: 5px;
    cursor: pointer;
