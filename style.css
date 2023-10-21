@@ -5,7 +5,6 @@
 }
 
 :root {
-   --base-font-size: 16px;
    --gray-text: #ADB7B9;
    --blue-text: #86ddff;
    --dark-blue: #002b8f;
@@ -16,13 +15,12 @@
 body {
    background-color: #080808;
    font-family: Arial, sans-serif;
-   font-size: 1em;
 }
 
 html {
    scroll-behavior: smooth;
+   
 }
-
 
 /* Nav Desktop */
 #nav {
@@ -37,15 +35,16 @@ html {
    top: 0;
    left: 0;
    width: 100%;
+   height: 10vh;
    background-color: #080808;
    z-index: 100;
 }
 
 /* Logo */
 img.logo {
-   width: 5em;
-   height: 5em;
-   margin-left: 5.5em;
+   width: 90px;
+   height: 90px;
+   margin-left: 13rem;
    border-radius: 50%;
 }
 
@@ -60,17 +59,16 @@ img.logo {
    position: relative;
 }
 
-.flag-icon {
-   display: inline-block;
-   width: 2.425em;
-   height: 2.425em;
+.flag-icon {   display: inline-block;
+   width: 2.75rem;
+   height: 2.75rem;
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
    opacity: 0;
    position: absolute;
    top: 50%;
-   left: .585em;
+   left: 50%;
    transform: translate(-50%, -50%) scale(0);
    transition: opacity 0.3s, transform 0.3s;
 }
@@ -90,12 +88,12 @@ img.logo {
 #nav ul {
    list-style: none;
    display: flex;
-   margin-right: 3em;
+   margin-right: 100px;
    gap: 2.4em;
 }
 
 #nav li {
-   font-size: 1.255em;
+   font-size: 1.255rem;
 }
 
 
@@ -111,9 +109,9 @@ img.logo {
 
 /* Intro */
 #hello-intro {
-   margin: 10em 0 0 5.625em;
+   margin: 10rem 0 0 14rem;
    display: flex;
-   justify-content: space-between;
+   /* justify-content: space-between; */
    align-items: center;
 }
 
@@ -122,30 +120,29 @@ img.logo {
 }
 
 .intro-img {
-   width: 100%;
-   height: auto;
+   /* max-width: 100%;
+   height: auto; */
+   text-align: center;
 }
 
 .intro-img img {
-   /* width: 120%;
-   height: auto; */
-   width: 40em;
+   width: 740px;
    height: auto;
    display: block;
    margin: 0 -4em 0;
 }
 
 h1 {
-   font-size: 3.625em;
+   font-size: 3.625rem;
    font-weight: 700;
    /* color: var(--mid-blue); */
    color: #1166C0;
-   margin-bottom: -.48em;
+   margin-bottom: -.48rem;
 }
 
 .name {
    color: #ffff;
-   font-size: 3.90em;
+   font-size: 3.90rem;
    font-weight: 700;
 }
 
@@ -435,7 +432,7 @@ hr {
    height: 100%;
    border: 1px solid var(--blue-text);
    transition: height .2s ease-out, background-color .5s ease-out;
-   background-image: linear-gradient(rgba(255, 255, 255, 0.5), var(--mid-blue));
+   background-image: linear-gradient(rgba(255, 255, 255, 0.5), var(--cool-blue));
    border-radius: 0.625em;
 }
 
