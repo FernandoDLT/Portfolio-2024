@@ -1,8 +1,3 @@
-* {
-   box-sizing: border-box;
-   padding: 0;
-   margin: 0;
-}
 
 :root {
    --gray-text: #ADB7B9;
@@ -12,14 +7,21 @@
    --cool-blue: #1166C0;
 }
 
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+
 body {
    background-color: #080808;
    font-family: Arial, sans-serif;
+   font-size: 16px;
+   min-height: 100vh;
 }
 
 html {
    scroll-behavior: smooth;
-   
 }
 
 /* Nav Desktop */
@@ -35,7 +37,6 @@ html {
    top: 0;
    left: 0;
    width: 100%;
-   height: 10vh;
    background-color: #080808;
    z-index: 100;
 }
@@ -44,7 +45,8 @@ html {
 img.logo {
    width: 90px;
    height: 90px;
-   margin-left: 13rem;
+   /* margin-left: 13rem; */
+   margin-left: 85px;
    border-radius: 50%;
 }
 
@@ -109,7 +111,7 @@ img.logo {
 
 /* Intro */
 #hello-intro {
-   margin: 10rem 0 0 14rem;
+   margin: 10rem 0 0 6rem;
    display: flex;
    /* justify-content: space-between; */
    align-items: center;
@@ -120,8 +122,8 @@ img.logo {
 }
 
 .intro-img {
-   /* max-width: 100%;
-   height: auto; */
+   max-width: 100%;
+   height: auto;
    text-align: center;
 }
 
@@ -129,7 +131,7 @@ img.logo {
    width: 740px;
    height: auto;
    display: block;
-   margin: 0 -4em 0;
+   margin: 0 -8em 0;
 }
 
 h1 {
@@ -137,7 +139,7 @@ h1 {
    font-weight: 700;
    /* color: var(--mid-blue); */
    color: #1166C0;
-   margin-bottom: -.48rem;
+   margin-bottom: -1.6rem;
 }
 
 .name {
@@ -149,7 +151,7 @@ h1 {
 #hello-intro p {
    color: var(--gray-text);
    font-size: 1.25em;
-   width: 33em;
+   width: 650px;
    margin-top: .25em;
    line-height: 1.25em;
    margin: .40em 0 3em;
@@ -241,7 +243,17 @@ li.skills::after {
    border-bottom: .18em solid var(--cool-blue);
    /* Adjust the thickness and color of the underline */
    margin-top: .28em;
-   width: 4em;
+   width: 5rem;
+   /* Adjust the spacing between text and underline */
+}
+
+li.skills.sp::after {
+   content: "";
+   display: block;
+   border-bottom: .18em solid var(--cool-blue);
+   /* Adjust the thickness and color of the underline */
+   margin-top: .28em;
+   width: 10.65rem;
    /* Adjust the spacing between text and underline */
 }
 
@@ -540,7 +552,7 @@ h3 {
 .form label {
    color: #ffff;
    font-size: .95em;
-   padding-bottom: .625em;
+   padding-bottom: .525em;
    letter-spacing: .04em;
 }
 
@@ -625,14 +637,18 @@ form {
 textarea {
    /* Styles for textareas within the form */
    width: 100%;
-   font-size: 1.25em;
+   font-size: 1em;
    padding: 10px;
-   margin-bottom: 2.5em;
+   margin-bottom: 1em;
    border: 1px solid #33353f;
    color: #ffff;
    background-color: #18191E;
    border-radius: 5px;
    resize: vertical;
+}
+
+::placeholder {
+   color: rgb(90, 90, 90);
 }
 
 button {
