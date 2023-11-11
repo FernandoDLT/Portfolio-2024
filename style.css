@@ -128,7 +128,7 @@ img.logo {
    background-color: #181818;
    border-radius: 50%;
    z-index: -1;
-   overflow: hidden;
+   /* overflow: hidden; */
 }
 
 .intro-img {
@@ -379,13 +379,15 @@ li::marker {
    color: var(--cool-blue);
 }
 
-/* PROJECT SECTION */
-.project-container {
-   width: 100%;
-   height: auto;
-   margin-bottom: 100px;
+hr {
+   border: none;
+   border-top: 0.0625em solid #33353f;
+   width: 65%;
+   margin: 1rem auto 2rem;
+   border-radius: 0.3125rem;
 }
 
+/* PROJECT SECTION */
 .project-header {
    font-size: 3rem;
    font-weight: 600;
@@ -396,12 +398,10 @@ li::marker {
    color: var(--cool-blue);
 }
 
-hr {
-   border: none;
-   border-top: 0.0625em solid #33353f;
-   width: 68%;
-   margin: 1rem auto 2rem;
-   border-radius: 0.3125rem;
+.project-container {
+   width: 100%;
+   height: auto;
+   margin-bottom: 8rem;
 }
 
 .projects {
@@ -415,14 +415,14 @@ hr {
    width: 24.5rem;
    background-color: #fff;
    position: relative;
-   box-shadow: -.25em 0.4375em .95em rgba(141, 150, 235, 0.836);
+   box-shadow: -.25em 0.4375em .95em rgba(129, 138, 221, 0.836);
    border-radius: 0.625em;
    margin: 3.125em;
 }
 
 .huddle-project {
    width: 24.5rem;
-   height: 18.875em;
+   height: 22.5em;
    background-color: #fff;
    position: relative;
    border-radius: 0.625em;
@@ -433,7 +433,7 @@ hr {
 
 .base-project {
    width: 24.5rem;
-   height: 18.75em;
+   height: 22.5em;
    background-color: #fff;
    position: relative;
    border-radius: 0.625em;
@@ -444,94 +444,90 @@ hr {
 
 .newsletter-project {
    width: 24.5rem;
-   height: 18.75em;
+   height: 22.5em;
    background-color: #fff;
    position: relative;
    border-radius: 0.625em;
    background-image: url(images/newsletter.png);
-   background-size: cover;
+   background-size: 100%;
    background-repeat: no-repeat;
 }
 
 .fylo-project {
    width: 24.5rem;
-   height: 18.75em;
+   height: 22.5em;
    background-color: #fff;
    position: relative;
    border-radius: 0.625em;
    background-image: url(images/fylo.png);
    background-size: 100%;
    background-repeat: no-repeat;
-   /* background-size: cover; */
 }
 
 .cc-details-project {
    width: 24.5rem;
-   height: 18.75em;
+   height: 22.5em;
    background-color: #fff;
    position: relative;
    border-radius: 0.625em;
    background-image: url(images/cc-details.png);
-   background-size: cover;
+   background-size: 100%;
    background-repeat: no-repeat;
 }
 
 .time-tracker-project {
    width: 24.5rem;
-   height: 18.75em;
+   height: 22.5em;
    background-color: #fff;
    position: relative;
    border-radius: 0.625em;
    background-image: url(images/time-tracker.png);
-   background-size: cover;
+   background-size: 100%;
    background-repeat: no-repeat;
 }
 
 .social-proof-project {
    width: 24.5rem;
-   height: 18.75em;
+   height: 22.5em;
    background-color: #fff;
    position: relative;
    border-radius: 0.625em;
    background-image: url(images/social-proof.png);
    background-size: 100%;
-   background-size: cover;
    background-repeat: no-repeat;
 }
 
 .four-card-project {
    width: 24.5rem;
-   height: 18.75em;
+   height: 22.5em;
    background-color: #fff;
    position: relative;
    border-radius: 0.625em;
    background-image: url(images/four-card.png);
-   background-size: cover;
+   background-size: 100%;
    background-repeat: no-repeat;
 }
 
 .bucket-list-project {
    width: 24.5rem;
-   height: 18.75em;
+   height: 22.5em;
    background-color: #fff;
    position: relative;
    border-radius: 0.625em;
    background-image: url(images/bucket-list.png);
    background-size: 100%;
    background-repeat: no-repeat;
-   /* background-position-y: 0px; */
 }
 
 .clipboard-project {
    width: 24.5rem;
-   height: 18.75em;
+   height: 22.5em;
    background-color: #fff;
    position: relative;
    border-radius: 0.625em;
    background-image: url(images/clipboard.png);
    background-size: 100%;
    background-repeat: no-repeat;
-   /* background-position-y: 0px; */
 }
 
 .text-container {
@@ -539,8 +535,8 @@ hr {
    height: 1.625em;
    width: 100%;
    text-align: center;
-   padding-top: 0.625em;
-   padding-bottom: 55px;
+   padding-top: 1.25em;
+   padding-bottom: 4em;
    z-index: 2;
    left: 0;
    bottom: 0;
@@ -561,9 +557,9 @@ hr {
 }
 
 h2.name {
-   margin: .225em 0.625em -0.625em;
+   margin: .225em 0.625em -.015em;
    color: var(--cool-blue);
-   font-size: 2em;
+   font-size: 2.2em;
    font-weight: 600;
    text-shadow: -2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -571,9 +567,10 @@ h2.name {
 .content {
    padding: 2em 0.95em 1.25em;
    margin-top: 0.625em;
-   color: var(--cool-blue);
-   font-size: 1.2rem;
+   color: white;
+   font-size: 1.35rem;
    font-weight: 600;
+   text-shadow: -2px 2px 4px rgba(0, 0, 0, 1);
 }
 
 .button {
