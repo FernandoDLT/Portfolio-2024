@@ -1,33 +1,69 @@
-// const form = document.querySelector('form');
-// const box = document.querySelector('.box');
-// const emailInput = document.getElementById('emailInput');
+// window.addEventListener('load', function () {
+//     const form = document.querySelector('form');
+//     const box = document.querySelector('.box');
+//     const emailInput = document.getElementById('email');
+//     const subjectInput = document.getElementById('subject');
+//     const messageInput = document.getElementById('message');
+//     const card_2 = document.querySelector(".card-2");
+//     const dismissButton = document.querySelector(".dismiss");
 
-// emailInput.addEventListener('input', function() {
-//     if (emailInput.value.trim() !== '') {
-//         emailInput.classList.add('has-value');
+//     if (form) {
+//         emailInput.addEventListener('input', function () {
+//             updateInputClass(emailInput);
+//         });
+
+//         form.addEventListener('submit', function (event) {
+//             event.preventDefault();
+
+//             const usernameInput = form.querySelector('input[type="text"]');
+//             const username = usernameInput ? usernameInput.value : '';
+
+//             const email = emailInput.value;
+//             const subject = subjectInput.value;
+//             const message = messageInput.value;
+
+//             if (validateInputs(username, email, subject, message)) {
+//                 form.style.display = 'none';
+//                 box.style.animation = 'none';
+//                 // box.style.background = 'linear-gradient(350deg, #3ba0ff, #002b8f)';
+
+//                 // const successMessage = document.createElement('h4');
+//                 // successMessage.innerText = 'Thank you! Your email has been sent!';
+
+//                 box.classList.add('show-message');
+//                 box.appendChild(successMessage);
+//             }
+//         });
+
+//         function updateInputClass(inputElement) {
+//             if (inputElement.value.trim() !== '') {
+//                 inputElement.classList.add('has-value');
+//             } else {
+//                 inputElement.classList.remove('has-value');
+//             }
+//         }
+
+//         function validateInputs(username, email, subject, message) {
+//             if (!username && !email && !subject && !message) {
+//                 // Check if at least one field is filled
+//                 alert('Please fill in at least one field');
+//                 return false;
+//             }
+
+//             // You can add more specific validation logic here if needed
+
+//             return true;
+//         }
 //     } else {
-//         emailInput.classList.remove('has-value');
+//         console.error('Form not found');
 //     }
 // });
 
-// form.addEventListener('submit', function(event) {
-//     event.preventDefault();
-
-//     const username = form.querySelector('input[type="text"]').value;
-//     const email = emailInput.value;
-
-//     if (username && email) {
-//         form.style.display = 'none';
-//         box.style.animation = 'none';
-//         box.style.background = 'linear-gradient(350deg, #3ba0ff, #002b8f)';
-
-//         const message = document.createElement('h4');
-//         message.innerText = 'Your email has been sent!';
-
-//         box.classList.add('show-message');
-//         box.appendChild(message);
-//     }
+// dismissButton.addEventListener("click", () => {
+//    window.location.href = "index.html";
+//    e.preventDefault();
 // });
+
 
 window.addEventListener('load', function () {
     const form = document.querySelector('form');
@@ -35,6 +71,7 @@ window.addEventListener('load', function () {
     const emailInput = document.getElementById('email');
     const subjectInput = document.getElementById('subject');
     const messageInput = document.getElementById('message');
+    const card_1 = document.querySelector(".card");
     const dismissButton = document.querySelector(".dismiss");
 
     if (form) {
@@ -55,10 +92,10 @@ window.addEventListener('load', function () {
             if (validateInputs(username, email, subject, message)) {
                 form.style.display = 'none';
                 box.style.animation = 'none';
-                // box.style.background = 'linear-gradient(350deg, #3ba0ff, #002b8f)';
+                box.style.background = 'linear-gradient(350deg, #3ba0ff, #002b8f)';
 
-                // const successMessage = document.createElement('h4');
-                // successMessage.innerText = 'Thank you! Your email has been sent!';
+                // Show card-2 instead of the success message
+                card_1.classList.remove('hide');
 
                 box.classList.add('show-message');
                 box.appendChild(successMessage);
@@ -75,21 +112,18 @@ window.addEventListener('load', function () {
 
         function validateInputs(username, email, subject, message) {
             if (!username && !email && !subject && !message) {
-                // Check if at least one field is filled
                 alert('Please fill in at least one field');
                 return false;
             }
 
-            // You can add more specific validation logic here if needed
-
             return true;
         }
+
+        dismissButton.addEventListener("click", (e) => {
+            window.location.href = "index.html";
+            e.preventDefault();
+        });
     } else {
         console.error('Form not found');
     }
-});
-
-dismissButton.addEventListener("click", () => {
-   window.location.href = "index.html";
-   e.preventDefault();
 });

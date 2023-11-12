@@ -811,44 +811,38 @@ button {
    box-shadow: 0 0 5px rgba(0, 116, 162, 0.5);
 }
 
-/* Thank you in Form message */
-.thank-you {
+/* Card Form message */
+.card {
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
    text-align: center;
-   color: #fff;
+   color: white ;
+   width: 100%;
+   height: auto;
    margin: 150px auto 0;
 }
 
-.thank-you h4 {
+.card h4 {
    font-size: 2.3rem;
    margin: 20px auto 10px;
 }
 
-.thank-you span {
+.card span {
    font-size: 1.6rem;
 }
 
-/* .hide {
+.hide {
    display: none;
 }
 
-button {
-   display: hidden;
-   color: white;
-   background: var(--dark-black);
-   border: 1px solid var(--cool-blue);
-   margin-top: 5em;
-   width: 50%;
+.card h1 {
+   font-size: 40px;
+   padding: 20px 0;
 }
 
-button:hover {
-   background-color: var(--tomato);
-   transition: all .5s;
-   border: 2px solid tomato;
-} */
+.b
 
 footer {
    display: flex;
