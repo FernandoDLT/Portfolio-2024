@@ -39,7 +39,8 @@ html {
    left: 0;
    width: 100%;
    background-color: var(--dark-black);
-   z-index: 100;
+   z-index: 999;
+   transition: top 1s ease, opacity .3s;
 }
 
 /* Logo */
@@ -48,6 +49,10 @@ img.logo {
    height: 90px;
    margin-left: 15em;
    border-radius: 50%;
+}
+
+#mobile-nav {
+   display: none;
 }
 
 .nav ul {
@@ -122,10 +127,10 @@ img.logo {
 /* Circle Background */
 .circle-background {
    position: absolute;
-   margin: 1rem 0 0 10rem;
+   margin: 1rem 0 0 11rem;
    width: 430px;
    height: 430px;
-   background-color: #181818;
+   background-color: hsl(0, 0%, 6%);
    border-radius: 50%;
    z-index: -1;
    /* overflow: hidden; */
@@ -656,10 +661,10 @@ section#bottom {
    margin-right: 0;
    position: relative;
    align-items: center;
-   width: 730px;
+   width: 780px;
    height: 456px;
-   /* background-color: var(--dark-black); */
-   /* box-shadow: -.25em .15em 1em rgba(104, 98, 98, 0.6); */
+   background-color: var(--dark-black);
+   box-shadow: -.25em .15em 1em rgba(104, 98, 98, 0.6);
    border-radius: 50px 5px;
    overflow: hidden;
 }
@@ -674,12 +679,12 @@ section#bottom {
    z-index: 10;
    padding: 50px 30px;
 }
-/* .box {
-   margin: 0 auto;
+
+.box {
    position: relative;
    align-items: center;
-   width: 684px;
-   height: 446px;
+   width: 50%;
+   height: 500px;
    background-color: var(--dark-black);
    box-shadow: -.25em .15em 1em rgba(104, 98, 98, 0.6);
    border-radius: 50px 5px;
@@ -695,7 +700,7 @@ form {
    background-color: var(--dark-black);
    z-index: 10;
    padding: 50px 30px;
-} */
+}
 
 .box label {
    color: #ffff;
@@ -709,9 +714,9 @@ form {
    position: absolute;
    top: -50%;
    left: -50%;
-   width: 750px;
-   height: 750px;
-   /* background: linear-gradient(60deg, var(--blue-text), var(--blue-text)); */
+   width: 990px;
+   height: 890px;
+   background: linear-gradient(60deg, var(--blue-text), var(--blue-text));
    transform-origin: bottom right;
    animation: animate 6s linear infinite;
 }
@@ -721,9 +726,9 @@ form {
    position: absolute;
    top: -50%;
    left: -50%;
-   width: 750px;
-   height: 750px;
-   /* background: linear-gradient(60deg, var(--cool-blue), var(--cool-blue)); */
+   width: 990px;
+   height: 890px;
+   background: linear-gradient(60deg, var(--cool-blue), var(--cool-blue));
    transform-origin: bottom right;
    animation: animate 6s linear infinite;
    animation-delay: -3s;
@@ -771,9 +776,10 @@ form {
 textarea {
    /* Styles for textareas within the form */
    width: 100%;
+   height: 4.5rem;
    font-size: 1em;
    padding: 10px;
-   margin-bottom: 1em;
+   margin-bottom: 1.4em;
    border: 1px solid #33353f;
    color: #ffff;
    background-color: #18191E;
@@ -788,11 +794,10 @@ textarea {
 /* Styles for the submit button */
 button {
       position: relative;
-      border: 2px solid #0360df;
+      border: 1px solid #0360df;
       border-radius: 50px;
-      padding: 16px 34px;
-      margin-right: 0.50em;
-      margin-top: 20px;
+      padding: .5em .5em;
+      margin-top: .6rem;
       min-width: 8em;
       background-color: #0360df;
       background-image:
@@ -804,12 +809,12 @@ button {
          inset 0 0 2px 1px rgba(255, 255, 255, .2),
          0 1px 4px 1px rgba(17, 110, 231, .2),
          0 1px 4px 1px rgba(0, 0, 0, .1);
-      font-size: 1.1em;
+      font-size: 1.5em;
       color: #fff;
       text-align: center;
       text-decoration: none;
       text-shadow: 0 1px 1px #116ee7;
-      /* transition-property: border-color, transform, background-color; */
+      transition-property: border-color, transform, background-color;
       transition-duration: .2s;
 
       &::after {
@@ -830,8 +835,9 @@ button {
    } */
       &:hover {
          /* transform: scale(1.04); */
-         /* background-color: var(--dark-blue); */
+         background-color: var(--dark-blue);
          background-image: none;
+         cursor: pointer;
          background-image:
             radial-gradient(75% 50% at 50% 0%, #f4feff, transparent),
             radial-gradient(75% 35% at 50% 85%, #8de3fc, transparent);
@@ -845,9 +851,9 @@ button {
 
       &:active {
          border-color: #0048d5;
-         /* transform: scale(.96); */
-         /* background-color: #0048d5; */
-         /* background-color: var(--dark-black); */
+         transform: scale(.99);
+         background-color: #0048d5;
+         background-color: var(--dark-black);
       }
 
       /* box-shadow: -.05em 0.275em 0.70em rgba(141, 150, 235, 0.836); */
@@ -861,7 +867,7 @@ button.dismiss  {
       margin-right: 0.50em;
       margin-top: 80px;
       min-width: 8em;
-      /* background-color: #0360df; */
+      background-color: #0360df;
       background-image:
          radial-gradient(75% 50% at 50% 0%, #f4feff, transparent),
          radial-gradient(75% 35% at 50% 85%, #8de3fc, transparent);
@@ -896,9 +902,10 @@ button.dismiss  {
       transform: scale(1.04);
    } */
       &:hover {
-         transform: scale(1.04);
-         /* background-color: var(--dark-blue); */
+         /* transform: scale(1.04); */
+         background-color: var(--dark-blue);
          background-image: none;
+         cursor: pointer;
          background-image:
             radial-gradient(75% 50% at 50% 0%, #f4feff, transparent),
             radial-gradient(75% 35% at 50% 85%, #8de3fc, transparent);
@@ -912,12 +919,9 @@ button.dismiss  {
 
       &:active {
          border-color: #0048d5;
-         /* transform: scale(.96); */
-         /* background-color: #0048d5; */
+         background-color: #0048d5;
          background-color: var(--dark-black);
       }
-
-      /* box-shadow: -.05em 0.275em 0.70em rgba(141, 150, 235, 0.836); */
    }
 /*  */
 
@@ -942,6 +946,10 @@ button.dismiss  {
    margin: 100px auto 0;
 }
 
+.icon-card-2 {
+   width: 50px;
+}
+
 .card h4 {
    font-size: 2.3rem;
    margin: 20px auto 10px;
@@ -950,6 +958,8 @@ button.dismiss  {
 .card span {
    font-size: 1.6rem;
 }
+
+
 
 .hide {
    display: none;

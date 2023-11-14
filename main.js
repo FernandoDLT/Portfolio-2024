@@ -127,3 +127,24 @@ window.addEventListener('load', function () {
         console.error('Form not found');
     }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const navBar = document.querySelector('.nav');
+    let lastScrollTop = 0;
+
+    if (navBar) {
+        window.addEventListener('scroll', () => {
+            const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (currentScrollTop <= 0) {
+                // At the top of the page, hide the navigation menu
+                navBar.style.top = '-100%';
+            } else {
+                // Scrolling down or up, show the navigation menu
+                navBar.style.top = '0';
+            }
+
+            lastScrollTop = currentScrollTop;
+        });
+    }
+});
