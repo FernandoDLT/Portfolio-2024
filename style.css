@@ -133,14 +133,12 @@ img.logo {
    background-color: hsl(0, 0%, 6%);
    border-radius: 50%;
    z-index: -1;
-   /* overflow: hidden; */
 }
 
 .intro-img {
    /* max-width: 100%; */
    height: auto;
    text-align: center;
-   /* overflow: hidden; */
    right: 0;
 }
 
@@ -218,9 +216,6 @@ h1 {
       opacity: .75;
    }
 
-   /* &:hover {
-      transform: scale(1.04);
-   } */
    &:hover {
       transform: scale(1.04);
       background-color: var(--dark-blue);
@@ -242,11 +237,11 @@ h1 {
       /* background-color: #0048d5; */
       background-color: var(--dark-black);
    }
-      /* box-shadow: -.05em 0.275em 0.70em rgba(141, 150, 235, 0.836); */
-}
-
-/* Resume Link */
-.resume-cta {
+      box-shadow: -.05em 0.275em 0.70em rgba(141, 150, 235, 0.836);
+   }
+   
+   /* Resume Link */
+   .resume-cta {
    position: relative;
    border: 2px solid #0360df;
    border-radius: 2.5rem;
@@ -303,6 +298,7 @@ h1 {
       transform: scale(.96);
       background-color: rgb(0, 0, 0);
    }
+   box-shadow: -.05em 0.275em 0.70em rgba(141, 150, 235, 0.836);
 }
 
 /* About Section */
