@@ -388,7 +388,7 @@ hr {
 .project-container {
    width: 100%;
    height: auto;
-   margin-bottom: 8rem;
+   margin-bottom: 6.5rem;
 }
 
 .projects {
@@ -928,7 +928,7 @@ button.dismiss  {
 
 .card h1 {
    font-size: 40px;
-   padding: 20px 0;
+   padding: 50px 0 0;
 }
 
 footer {
@@ -1041,8 +1041,8 @@ footer {
 
    .circle-background {
       position: absolute;
-      width: 328px;
-      height: 328px;
+      width: 228px;
+      height: 228px;
       /* align-items: center; */
       /* justify-content: center; */
       margin-left: .4em;
@@ -1052,16 +1052,16 @@ footer {
    }
    
    .intro-img img {
-      margin-top: 5rem;
-      width: 100%;
-      /* height: auto; */
-      width: 600px;
+      /* margin-top: 5rem; */
+      /* width: 100%; */
       height: auto;
-      display: block;
-      /* align-items: center; */
-      /* justify-content: center; */
+      /* width: 500px; */
+      /* height: auto; */
+      /* display: block; */
+      align-items: center;
+      justify-content: center;
       /* margin-left: 3.5rem; */
-      margin: 20px 0 0 -130px;
+      /* margin: 0; */
    }
 
    #about-me {
@@ -1093,6 +1093,12 @@ footer {
       font-size: 2.4rem;
    }
 
+   .projects {
+      width: 100%;
+      /* height: auto; */
+      margin: 0 auto;
+   }
+
    section#bottom {
       display: flex;
       flex-direction: column;
@@ -1104,8 +1110,8 @@ footer {
    }
 
    div.bottom-text {
-      width: 90%;
-      padding-left: 3.5rem;
+      width: 100%;
+      padding-left: 2.5rem;
    }
    
    #bottom p, h3, .social-icons {
@@ -1129,18 +1135,18 @@ footer {
 
    .box {
       margin: 0 auto 60px;
-      width: 90%;
+      width: 100%;
       height: 480px;
       box-shadow: none;
    }
 
-   .box-form {
+   /* .box-form {
       width: 100%;
-   }
+   } */
 
-   form {
+   /* form {
       width: 100%;
-   }
+   } */
 
    .box input {
       padding: .84rem;
@@ -1157,7 +1163,6 @@ footer {
    }
 
    .box {
-      /* background-color: ; */
       /* Set background to transparent */
       border-radius: 0;
       /* box-shadow: -.25em .15em 1em rgba(104, 98, 98, 0.6); */
@@ -1165,20 +1170,9 @@ footer {
    }
    
    .box form {
+      background-color: none;
       border-radius: 0;
       border: none;
-   }
-
-   .card {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-      width: 100%;
-      height: auto;
-      margin: 30px auto 0;
    }
 
    .rights {
