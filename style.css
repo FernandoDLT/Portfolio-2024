@@ -1041,24 +1041,29 @@ footer {
 
    .circle-background {
       position: absolute;
-      width: 228px;
-      height: 228px;
-      /* align-items: center; */
-      /* justify-content: center; */
-      margin-left: .4em;
+      width: 295px;
+      height: 295px;
+      align-items: center;
+      justify-content: center;
+      margin-left: 130px;
       margin-top: 2rem;
       border-radius: 50%;
       z-index: -1;
    }
+
+   .intro-img {
+      width: 100%;
+      height: auto;
+   }
    
    .intro-img img {
-      /* margin-top: 5rem; */
-      /* width: 100%; */
-      height: auto;
+      margin: 2.5rem auto;
+      width: 94%;
+      /* height: auto; */
       /* width: 500px; */
       /* height: auto; */
-      /* display: block; */
-      align-items: center;
+      display: block;
+      /* align-items: center; */
       justify-content: center;
       /* margin-left: 3.5rem; */
       /* margin: 0; */
