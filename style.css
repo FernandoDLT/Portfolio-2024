@@ -958,7 +958,7 @@ footer {
 
 
 /* Media Query */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
    body {
       width: 100%;
       font-size: 1rem;
@@ -1185,7 +1185,7 @@ footer {
 }
 
 /* Media query for screens between 601px and 1024px */
-@media screen and (min-width: 601px) and (max-width: 1634px) {
+@media screen and (min-width: 651px) and (max-width: 1634px) {
    body {
       font-size: 1rem;
    }
