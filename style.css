@@ -955,7 +955,7 @@ footer {
 
 
 /* Media query for screens larger than 1366px */
-@media screen and (min-width: 1366px) {
+@media (max-width: 1601px) {
    body {
       width: 100%;
       font-size: 1rem;
@@ -977,16 +977,33 @@ footer {
    }
 
    #hello-intro {
-      width: 100%;
-      margin: 80px 6rem 0px;
+      width: 102%;
+      margin: 80px 0px 0px 6rem;
       display: flex;
+      font-size: 1.15rem;
+   }
+
+   .circle-background {
+      position: absolute;
+   }
+   /* Example using Flexbox */
+   /* .project-container {
+      display: flex;
+      flex-wrap: wrap;
+   } */
+   
+   .project-item {
+      /* flex: 1 0 5%; */
+      /* Adjust as needed for your design */
+      /* flex: 1 0 calc(33.33% - 30px); */
+      margin: 24px;
    }
 }
 
 
 
 /* Media Query */
-@media screen and (max-width: 650px) {
+@media (max-width: 650px) {
    body {
       width: 100%;
       font-size: 1rem;
@@ -1125,7 +1142,7 @@ footer {
 
    .projects {
       width: 100%;
-      /* height: auto; */
+      height: auto;
       margin: 0 auto;
    }
 
