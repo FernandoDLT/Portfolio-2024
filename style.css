@@ -15,6 +15,7 @@
 }
 
 body {
+   margin-top: 8rem;
    background-color: var(--dark-black);
    font-family: Arial, sans-serif;
    font-size: 16px;
@@ -129,8 +130,8 @@ img.logo {
 .circle-background {
    position: absolute;
    margin: 1rem 0 0 10.6rem;
-   width: 430px;
-   height: 430px;
+   width: 26.875rem;
+   height: 26.875rem;
    background-color: hsl(0, 0%, 6%);
    border-radius: 50%;
    z-index: -1;
@@ -955,7 +956,7 @@ footer {
 
 
 /* Media query for screens larger than 1366px */
-@media (max-width: 1601px) {
+@media (max-width: 1620px) {
    body {
       width: 100%;
       font-size: 1rem;
@@ -977,10 +978,10 @@ footer {
    }
 
    #hello-intro {
-      width: 102%;
+      /* width: 102%; */
       margin: 80px 0px 0px 6rem;
-      display: flex;
-      font-size: 1.15rem;
+      /* display: flex; */
+      font-size: 1.10rem;
    }
 
    .circle-background {
@@ -996,8 +997,32 @@ footer {
       /* flex: 1 0 5%; */
       /* Adjust as needed for your design */
       /* flex: 1 0 calc(33.33% - 30px); */
-      margin: 24px;
+      margin: 18px;
    }
+
+   section#bottom {
+      width: 86%;
+      margin: 5rem auto;
+   }
+
+   .bottom-text {
+      width: 60%;
+      padding-right: 4rem;
+   }
+
+   #bottom p {
+      width: 60%;
+      margin-top: .25rem;
+      width: auto;
+   } 
+
+   .box {
+      height: 450px;
+      width: 800px;
+      /* margin-left: 200px; */
+   }
+
+
 }
 
 
