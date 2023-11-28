@@ -92,7 +92,7 @@ window.addEventListener('load', function () {
             if (validateInputs(username, email, subject, message)) {
                 form.style.display = 'none';
                 box.style.animation = 'none';
-                box.style.background = 'rgba(24,24,24)';
+                // box.style.background = 'rgba(24,24,24)';
 
                 // Show card-2 instead of the success message
                 card_1.classList.remove('hide');
