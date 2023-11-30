@@ -120,7 +120,7 @@ window.addEventListener('load', function () {
         }
 
         dismissButton.addEventListener("click", (e) => {
-            window.location.href = "index.html";
+            window.location.href = "index.html"
             e.preventDefault();
         });
     } else {
