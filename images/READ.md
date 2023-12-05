@@ -2,7 +2,7 @@
 
 Welcome to my 2024 portfolio! This webpage showcases my skills, projects, and contact information.
 
-![Portfolio img](/images/Portfolio-Screenshot%202024.png)
+![Portfolio img](images/Screenshot-2024.png)
 
 ## Features
 
