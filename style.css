@@ -48,7 +48,7 @@ html {
 img.logo {
    width: 90px;
    height: 90px;
-   margin-left: 15em;
+   margin-left: 8em;
    border-radius: 50%;
 }
 
@@ -87,7 +87,8 @@ img.logo {
    position: relative;
 }
 
-.flag-icon {   display: inline-block;
+.flag-icon {   
+   display: inline-block;
    width: 2.75rem;
    height: 2.75rem;
    background-size: cover;
@@ -116,7 +117,7 @@ img.logo {
 /* Intro */
 #hello-intro {
    width: auto;
-   margin: 10rem 0 0 15em;
+   margin: 10rem 0 0 8rem;
    display: flex;
    align-items: center;
 }
@@ -582,7 +583,7 @@ h3 {
 
 /* Bottom Section */
 section#bottom {
-   margin: 8em 15em;
+   margin: 8rem;
    width: 80%;
    display: flex;
    justify-content: space-around;
@@ -601,9 +602,9 @@ section#bottom {
 }
 
 #bottom p {
-   width: 35em;
-   margin-top: .1em;
-   margin-bottom: 1.4em;
+   width: 33em;
+   margin-top: .5em;
+   margin-bottom: 1em;
    font-size: 1.25em;
    color: var(--gray-text);
    line-height: 1.2em;
@@ -614,6 +615,29 @@ section#bottom {
    font-size: 2.4em;
    color: #ffff;
    gap: 0.55em;
+}
+
+.circle2-background {
+   position: absolute;
+   margin: -.5rem 0 0 1.6rem;
+   padding: 1.5rem;
+   width: 16.875rem;
+   height: 16.875rem;
+   z-index: -1;
+}
+
+.circle2-background::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: radial-gradient(circle, #002b8f 0%, 
+                              hsla(240, 13%, 3%, 0.7) 70%,
+                              hsl(0, 0%, 4%) 80%, transparent 100%);
+   border-radius: 50%;
+   z-index: -1;
 }
 
 .social-icons i {
