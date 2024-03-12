@@ -619,10 +619,10 @@ section#bottom {
 
 .circle2-background {
    position: absolute;
-   margin: -.5rem 0 0 1.6rem;
-   padding: 1.5rem;
-   width: 16.875rem;
-   height: 16.875rem;
+   margin: -3.5rem 0 0 .6rem;
+   padding: .5rem;
+   width: 24.875rem;
+   height: 24.875rem;
    z-index: -1;
 }
 
