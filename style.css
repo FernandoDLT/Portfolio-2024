@@ -23,7 +23,7 @@ body {
 
 html {
    scroll-behavior: smooth;
-   width: 100%;
+   /* width: 100%; */
 }
 
 /* Nav Desktop */
@@ -212,7 +212,7 @@ h1 {
       left: 50%;
       transform: translateX(-50%);
       border-radius: 50px;
-      width: 80%;
+      width: 82%;
       height: 40%;
       background-image: linear-gradient(to bottom, #f4feff, transparent);
       opacity: .75;
@@ -270,7 +270,7 @@ h1 {
       left: 50%;
       transform: translateX(-50%);
       border-radius: 50px;
-      width: 80%;
+      width: 85%;
       height: 40%;
       background-image: linear-gradient(to bottom, #f4feff, transparent);
       opacity: .75;
@@ -634,8 +634,8 @@ section#bottom {
    width: 100%;
    height: 100%;
    background: radial-gradient(circle, #002b8f 0%, 
-                              hsla(240, 13%, 3%, 0.7) 70%,
-                              hsl(0, 0%, 4%) 80%, transparent 100%);
+               hsla(240, 13%, 3%, 0.7) 70%,
+               hsl(0, 0%, 4%) 80%, transparent 100%);
    border-radius: 50%;
    z-index: -1;
 }
@@ -1055,7 +1055,7 @@ footer {
    }
 
    img.logo {
-      margin-left: 3em;
+      margin-left: 1.8rem;
       width: 50px;
       height: 50px;
    }
@@ -1127,18 +1127,9 @@ footer {
    .hire, .resume-cta {
       width: 100%;
       margin-right: 0;
-   }
-
-   .circle-background {
-      position: absolute;
-      width: 295px;
-      height: 295px;
-      align-items: center;
-      justify-content: center;
-      margin-left: 130px;
-      margin-top: 2rem;
-      border-radius: 50%;
-      z-index: -1;
+      &::after {
+            width: 93%;
+         }
    }
 
    .intro-img {
@@ -1158,18 +1149,30 @@ footer {
       /* margin-left: 3.5rem; */
       /* margin: 0; */
    }
+   
+   .circle-background {
+      position: absolute;
+      width: 245px;
+      height: 245px;
+      align-items: center;
+      justify-content: center;
+      margin-left: 8rem;
+      margin-top: 2.5rem;
+      border-radius: 50%;
+      z-index: -1;
+   }
 
    #about-me {
       display: flex;
       flex-direction: column-reverse;
       align-items: center;
       justify-content: center;
-      margin: 4rem auto 1rem;
+      margin: 1rem auto 1rem;
       width: 80%;
    }
 
    /* .about-text h2 {
-      margin: 0;
+      margin: 1rem;
    } */
 
    div.about-img {
@@ -1202,13 +1205,13 @@ footer {
    }
 
    div.bottom-text {
-      width: 100%;
-      padding-left: 2.5rem;
+      width: auto;
+      padding-right: 0;
    }
    
    #bottom p, h3, .social-icons {
       width: 90%;
-      /* margin-left: 0; */
+      margin-left: 1.8rem;
    }
 
    #bottom p {
@@ -1225,6 +1228,10 @@ footer {
       margin-bottom: 2rem;
    }
 
+   .circle2-background {
+      display: none;
+   }
+
    .box {
       margin: 0 auto 60px;
       width: 100%;
@@ -1236,9 +1243,9 @@ footer {
       width: 100%;
    } */
 
-   /* form {
+   form {
       width: 100%;
-   } */
+   }
 
    .box input {
       padding: .84rem;
@@ -1265,6 +1272,7 @@ footer {
       background-color: none;
       border-radius: 0;
       border: none;
+      padding: 2.5rem auto;
    }
 
    .rights {
