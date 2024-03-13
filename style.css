@@ -127,28 +127,36 @@ img.logo {
 }
 
 /* Circle Background */
-.circle-background {
-   position: absolute;
-   margin: 1rem 0 0 10.6rem;
-   width: 26.875rem;
-   height: 26.875rem;
-   background-color: hsl(0, 0%, 6%);
-   border-radius: 50%;
-   z-index: -1;
-}
-
 .intro-img {
    width: 60%;
    height: auto;
    text-align: center;
-   right: 0;
+   position: relative;
 }
 
+.circle-background {
+   position: absolute;
+   top: 46%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   /* Center the circle horizontally and vertically */
+   width: 60%;
+   /* Make it cover the entire container */
+   padding-top: 60%;
+   /* Make it cover the entire container */
+   background-color: hsl(0, 0%, 6%);
+   /* background-color: white; */
+   border-radius: 50%;
+   z-index: -1;
+}
+
+/* Hero Image */
 .intro-img img {
-   width: 760px;
+   width: 100%;
+   max-width: 760px;
    height: auto;
    display: block;
-   margin-right: 4rem;
+   margin: 0 auto;
 }
 
 h1 {
@@ -979,7 +987,7 @@ footer {
 
 
 /* Media query for screens larger than 1620px */
-@media (max-width: 1620px) {
+@media (min-width: 1024px) {
    body {
       width: 100%;
       font-size: 1rem;
@@ -1038,22 +1046,68 @@ footer {
 
 
 /* Media @1435 */
-@media (min-width: 935px) {
+/* @media (min-width: 935px) {
    .project-container {
       width: 100%;
    }
    .project-item {
 
    }
+} */
+
+/* Media query for screens between 651px and 1024px */
+@media (min-width: 768px) and (max-width: 1023px) {
+   div.intro-text {
+      width: 100%;
+   }
+
+   .name {
+      font-size: 2.5rem;
+      width: 100%;
+   }
+
+   .intro-links {
+      display: flex;
+      align-items: center;
+   }
+
+   img.logo {
+      margin-left: 2rem;
+      /* width: 50px;
+      height: 50px; */
+   }
+
+   a.hire {
+      /* width: 80%; */
+      /* margin-right: 0; */
+      &::after {
+         width: 80%;
+      }
+   }
+   
+   a.resume-cta {
+      &::after {
+         width: 80%;
+      }
+   }
+
+   #about-me {
+      margin: 8em 0em 0em 8em;
+      display: block;
+   }
+
+   .about-img img {
+      display: none;
+   }
 }
 
 /* Media Query */
-@media (max-width: 390px) {
+@media (max-width: 391px) and (max-width: 767px) {
    body {
-      width: 100%;
+      /* width: 100%; */
       font-size: 1rem;
    }
-
+   
    img.logo {
       margin-left: 1.8rem;
       width: 50px;
@@ -1279,21 +1333,5 @@ footer {
       margin-right: 2.8em;
       color: #315569;
       font-size: .6rem;
-   }
-}
-
-/* Media query for screens between 601px and 1024px */
-@media screen and (min-width: 651px) {
-   body {
-      font-size: 1rem;
-   }
-
-   .intro-links {
-      display: flex;
-      /* flex-direction: column; */
-      /* justify-content: center; */
-      align-items: center;
-      /* width: 400px; */
-      /* margin: 2em .68em 0 0; */
    }
 }
