@@ -126,39 +126,36 @@ img.logo {
    width: 65%;
 }
 
-/* Circle Background */
 .intro-img {
    width: 60%;
    height: auto;
    text-align: center;
    position: relative;
+   overflow: hidden;
+}
+
+.intro-img img {
+   width: 120%;
+   height: auto;
+   display: block;
+   margin-left: -10%;
+   position: relative;
+   clip-path: polygon(20% 0, 80% 0, 80% 100%, 20% 100%);
+   
 }
 
 .circle-background {
    position: absolute;
-   top: 46%;
+   top: 48%;
    left: 50%;
    transform: translate(-50%, -50%);
-   /* Center the circle horizontally and vertically */
-   width: 60%;
-   /* Make it cover the entire container */
-   padding-top: 60%;
-   /* Make it cover the entire container */
+   width: 65%;
+   padding-top: 65%;
    background-color: hsl(0, 0%, 6%);
    /* background-color: white; */
    border-radius: 50%;
    z-index: -1;
 }
-
-/* Hero Image */
-.intro-img img {
-   width: 100%;
-   max-width: 760px;
-   height: auto;
-   display: block;
-   margin: 0 auto;
-}
-
 h1 {
    font-size: 3.625rem;
    font-weight: 700;
@@ -168,7 +165,7 @@ h1 {
 
 .name {
    color: #ffff;
-   font-size: 3.90rem;
+   font-size: 3.7rem;
    font-weight: 700;
 }
 
@@ -409,121 +406,54 @@ hr {
 
 .project-item {
    width: 27.5rem;
+   height: 22.5em;
    background-color: #fff;
    position: relative;
    box-shadow: -.25em 0.4375em .95em rgba(129, 138, 221, 0.836);
    border-radius: 0.625em;
    margin: 3.125em;
+   background-size: 100%;
+   background-repeat: no-repeat;
 }
 
 .huddle-project {
-   width: 27.5rem;
-   height: 22.5em;
-   background-color: #fff;
-   position: relative;
-   border-radius: 0.625em;
    background-image: url(images/huddle.png);
-   background-size: 100%;
-   background-repeat: no-repeat;
 }
 
 .base-project {
-   width: 27.5rem;
-   height: 22.5em;
-   background-color: #fff;
-   position: relative;
-   border-radius: 0.625em;
    background-image: url(images/base-apprl.png);
-   background-size: 100%;
-   background-repeat: no-repeat;
 }
 
 .newsletter-project {
-   width: 27.5rem;
-   height: 22.5em;
-   background-color: #fff;
-   position: relative;
-   border-radius: 0.625em;
    background-image: url(images/newsletter.png);
-   background-size: 100%;
-   background-repeat: no-repeat;
 }
 
 .fylo-project {
-   width: 27.5rem;
-   height: 22.5em;
-   background-color: #fff;
-   position: relative;
-   border-radius: 0.625em;
    background-image: url(images/fylo.png);
-   background-size: 100%;
-   background-repeat: no-repeat;
 }
 
 .cc-details-project {
-   width: 27.5rem;
-   height: 22.5em;
-   background-color: #fff;
-   position: relative;
-   border-radius: 0.625em;
    background-image: url(images/cc-details.png);
-   background-size: 100%;
-   background-repeat: no-repeat;
 }
 
 .time-tracker-project {
-   width: 27.5rem;
-   height: 22.5em;
-   background-color: #fff;
-   position: relative;
-   border-radius: 0.625em;
    background-image: url(images/time-tracker.png);
-   background-size: 100%;
-   background-repeat: no-repeat;
 }
 
 .social-proof-project {
-   width: 27.5rem;
-   height: 22.5em;
-   background-color: #fff;
-   position: relative;
-   border-radius: 0.625em;
    background-image: url(images/social-proof.png);
-   background-size: 100%;
-   background-repeat: no-repeat;
 }
 
 .four-card-project {
-   width: 27.5rem;
-   height: 22.5em;
-   background-color: #fff;
-   position: relative;
-   border-radius: 0.625em;
    background-image: url(images/four-card.png);
-   background-size: 100%;
-   background-repeat: no-repeat;
 }
 
 .bucket-list-project {
-   width: 27.5rem;
-   height: 22.5em;
-   background-color: #fff;
-   position: relative;
-   border-radius: 0.625em;
    background-image: url(images/bucket-list.png);
-   background-size: 100%;
-   background-repeat: no-repeat;
 }
 
 .clipboard-project {
-   width: 27.5rem;
-   height: 22.5em;
-   background-color: #fff;
-   position: relative;
-   border-radius: 0.625em;
    background-image: url(images/clipboard.png);
-   background-size: 100%;
-   background-repeat: no-repeat;
 }
 
 .text-container {
@@ -987,7 +917,7 @@ footer {
 
 
 /* Media query for screens larger than 1620px */
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
    body {
       width: 100%;
       font-size: 1rem;
@@ -1016,10 +946,19 @@ footer {
 
    .circle-background {
       position: absolute;
-   }
+   } */
    
-   .project-item {
+   /* .project-item {
       margin: 1.2rem;
+   } */
+
+   /* .project-item {
+      width: 27.5rem;
+      background-color: #fff;
+      position: relative;
+      box-shadow: -.25em 0.4375em .95em rgba(129, 138, 221, 0.836);
+      border-radius: 0.625em;
+      margin: 3.125em;
    }
 
    section#bottom {
@@ -1042,7 +981,7 @@ footer {
       height: 450px;
       width: 800px;
    }
-}
+} */
 
 
 /* Media @1435 */
@@ -1057,12 +996,16 @@ footer {
 
 /* Media query for screens between 651px and 1024px */
 @media (min-width: 768px) and (max-width: 1023px) {
-   div.intro-text {
-      width: 100%;
+   #hello-intro{
+      margin: 6.8rem 0 0 3rem;
    }
 
-   .name {
-      font-size: 2.5rem;
+   .intro-text {
+      width: 55%;
+   }
+
+   h1, .name {
+      font-size: 2.6rem;
       width: 100%;
    }
 
@@ -1072,7 +1015,7 @@ footer {
    }
 
    img.logo {
-      margin-left: 2rem;
+      margin-left: 4rem;
       /* width: 50px;
       height: 50px; */
    }
@@ -1092,26 +1035,56 @@ footer {
    }
 
    #about-me {
-      margin: 8em 0em 0em 8em;
+      width: 90%;
+      margin: 8rem 0 0 3rem;
       display: block;
    }
 
    .about-img img {
       display: none;
    }
+
+   li.skills {
+      font-size: 1.8rem;
+      list-style-type: none;
+      margin: 3rem 0 1rem -1rem;
+      color: white;
+   }
+
+   ul.skills {
+      font-size: 1.4;
+      margin-left: 1rem;
+   }
+
+   .project-header {
+      margin-top: 5rem;
+   }
+
+   /* .project-container {
+
+   } */
+
+   #bottom {
+      width: 100%;
+   }
+
+   #bottom-text {
+      display: block;
+      width: 100%;
+   }
 }
 
-/* Media Query */
-@media (max-width: 391px) and (max-width: 767px) {
+/* Media Query  Styles for viewport width less than or equal to 391px */
+@media (max-width: 391px) {
    body {
-      /* width: 100%; */
-      font-size: 1rem;
+      width: 100%;
+      /* font-size: 1rem; */
    }
-   
+
    img.logo {
-      margin-left: 1.8rem;
-      width: 50px;
-      height: 50px;
+      margin: 0 2.5rem 0 .5rem;
+      width: 40px;
+      height: 40px;
    }
 
    .nav ul {
@@ -1203,18 +1176,6 @@ footer {
       /* margin-left: 3.5rem; */
       /* margin: 0; */
    }
-   
-   .circle-background {
-      position: absolute;
-      width: 225px;
-      height: 225px;
-      align-items: center;
-      justify-content: center;
-      margin-left: 5rem;
-      margin-top: 1.8rem;
-      border-radius: 50%;
-      z-index: -1;
-   }
 
    #about-me {
       display: flex;
@@ -1225,12 +1186,12 @@ footer {
       width: 80%;
    }
 
-   /* .about-text h2 {
-      margin: 1rem;
-   } */
+   .about-text h2{
+      text-align: center;
+   }
 
    div.about-img {
-      margin-top: 50px;
+      display: none;
    }
    
    .about-img img {
@@ -1240,12 +1201,26 @@ footer {
 
    .project-header {
       font-size: 2.4rem;
+      margin-top: 2rem;
    }
 
-   .projects {
-      width: 100%;
-      height: auto;
-      margin: 0 auto;
+   .content {
+      font-size: 1rem;
+   }
+
+   h2.name {
+      font-size: 1.4rem;
+      text-align: center;
+      padding: 0;
+
+   }
+
+   h3 {
+      font-size: 1.4rem;
+   }
+
+   .project-item {
+      height: 18rem;
    }
 
    section#bottom {
