@@ -1157,13 +1157,14 @@ footer {
    .intro-img {
       width: 100%;
       height: auto;
+      margin: 2rem 0;
    }
    
    .intro-img img {
-      margin: 2.5rem auto;
+      /* margin: 2.5rem auto;
       width: 94%;
       display: block;
-      justify-content: center;
+      justify-content: center; */
    }
 
    #about-me {
@@ -1191,19 +1192,14 @@ footer {
       margin-left: 1rem;
    }
    
-   .about-img img {
-      margin: auto;
-      width: 100%;
-   }
-
    .project-header {
-      font-size: 2.1rem;
+      font-size: 1.6rem;
       margin-top: 2rem;
    }
 
-   hr {
-      margin-bottom: -.8rem;
-   }
+   /* .projects-header {
+      margin-bottom: 21.8rem;
+   } */
 
    .project-container {
       margin-bottom: 0;
@@ -1214,17 +1210,19 @@ footer {
    }
 
    .button {
-      width: 72%;
+      width: 60%;
+      padding: .6rem;
+      border: .05rem solid var(--blue-text);
    }
 
    h2.name {
-      font-size: 1.8rem;
+      font-size: 1.4rem;
       text-align: center;
       padding: 0;
    }
 
    h3 {
-      font-size: 1.4rem;
+      font-size: 1rem;
    }
 
    .project-item {
@@ -1247,8 +1245,6 @@ footer {
    #bottom p {
       width: 90%;
    }
-
-   
    
    .social-icons {
       font-size: 2rem;
