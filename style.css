@@ -1082,18 +1082,20 @@ footer {
    }
 
    img.logo {
-      margin: 0 2.5rem 0 1rem;
-      width: 40px;
-      height: 40px;
+      margin: 0 1.2rem 0 0rem;
+      width: 2.5rem;
+      height: 2.5rem;
    }
-
+   
    .nav ul {
-      margin-right: 40px;
-      gap: 1.4em;
+      font-size: .6rem;
+      /* margin-right: .08em; */
+      margin-left: 4rem;
+      gap: 1.5rem;
    }
 
    .nav li {
-      font-size: .8rem;
+      font-size: .65rem;
    }
 
    #hello-intro {
@@ -1196,10 +1198,6 @@ footer {
       font-size: 1.6rem;
       margin-top: 2rem;
    }
-
-   /* .projects-header {
-      margin-bottom: 21.8rem;
-   } */
 
    .project-container {
       margin-bottom: 0;
