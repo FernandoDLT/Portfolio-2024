@@ -1094,7 +1094,7 @@ footer {
    .nav ul {
       font-size: .6rem;
       /* margin-right: 0em; */
-      margin-right: .5rem;
+      margin-right: .0rem;
       gap: .6rem;
    }
 
@@ -1103,7 +1103,7 @@ footer {
    }
 
    .lang-links {
-      margin-left: 4.6rem;
+      margin-left: 1.6rem;
    }
 
    #hello-intro {
