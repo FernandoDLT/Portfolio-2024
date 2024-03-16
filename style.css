@@ -1082,20 +1082,28 @@ footer {
    }
 
    img.logo {
-      margin: 0 1.2rem 0 0rem;
+      margin: 0 2rem 0 0rem;
       width: 2.5rem;
       height: 2.5rem;
+   }
+
+   .nav {
+      justify-content: left;
    }
    
    .nav ul {
       font-size: .6rem;
       /* margin-right: .08em; */
-      margin-left: 1rem;
-      gap: 1.5rem;
+      margin-right: .5rem;
+      gap: 1rem;
    }
 
    .nav li {
       font-size: .65rem;
+   }
+
+   .lang-links {
+      margin-left: 1.6rem;
    }
 
    #hello-intro {
