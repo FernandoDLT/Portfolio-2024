@@ -23,7 +23,7 @@ body {
 
 html {
    scroll-behavior: smooth;
-   /* width: 100%; */
+   width: 100%;
 }
 
 /* Nav Desktop */
@@ -152,7 +152,6 @@ img.logo {
    width: 65%;
    padding-top: 65%;
    background-color: hsl(0, 0%, 6%);
-   /* background-color: white; */
    border-radius: 50%;
    z-index: -1;
 }
@@ -571,9 +570,11 @@ section#bottom {
    left: 0;
    width: 100%;
    height: 100%;
-   background: radial-gradient(circle, #002b8f 0%, 
-               hsla(240, 13%, 3%, 0.7) 70%,
-               hsl(0, 0%, 4%) 80%, transparent 100%);
+   background: radial-gradient(circle, 
+      #002b8f 0%, 
+      hsla(240, 13%, 3%, 0.7) 70%,
+      hsl(0, 0%, 4%) 80%,
+      transparent 100%);
    border-radius: 50%;
    z-index: -1;
 }
@@ -594,7 +595,6 @@ section#bottom {
 .social-icons a:hover {
    transform: rotateY(360deg) scale(1.48);
 }
-
 
 /* Form */
 .box {
@@ -865,7 +865,7 @@ button.dismiss  {
    justify-content: center;
    align-items: center;
    text-align: center;
-   /* color: white; */
+   color: white;
    width: 100%;
    height: auto;
    margin: 100px auto 0;
@@ -1009,7 +1009,6 @@ footer {
    }
 
    a.hire {
-      /* width: 80%; */
       margin-right: 2rem;
       &::after {
          width: 80%;
@@ -1047,10 +1046,6 @@ footer {
    .project-header {
       margin-top: 5rem;
    }
-
-   /* .project-container {
-
-   } */
 
    #bottom {
       width: 100%;
@@ -1123,7 +1118,6 @@ footer {
       background-color: none;
       border-radius: 0;
       border: none;
-      /* padding: 2.5rem auto; */
    }
 
    .rights {
@@ -1131,250 +1125,226 @@ footer {
    }
 }
 
-@media (min-width: 391px) and (max-width: 766px) {
-   /* body {
-         width: 100%;
-      } */
+@media (min-width: 391px) and (max-width: 766px) {   
+   img.logo {
+      margin: 0 .8rem 0rem 1rem;
+      width: 4rem;
+      height: 4rem;
+   }
    
-      img.logo {
-         margin: 0 .8rem 0rem 1rem;
-         width: 4rem;
-         height: 4rem;
-      }
-      
-      .nav li {
-         font-size: .90rem;
-         margin-right: 1rem;
-      }
+   .nav li {
+      font-size: .90rem;
+      margin-right: 1rem;
+   }
 
-      .nav ul {
-         margin-right: 0;
-         gap: .2rem;
-      }
+   .nav ul {
+      margin-right: 0;
+      gap: .2rem;
+   }
 
-      /* a#about {
-         display: flex;
-         width: 5rem;
-      } */
-   
-      div.lang-links {
-         /* margin-left: 2rem; */
-         right: 0;
-         margin-left: 0rem;
-         gap: .2rem;
-      }
-   
-      #hello-intro {
-         width: 100%;
-         margin: 80px auto 0px;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         text-align: center;
-      }
-   
-      div.intro-text {
-         width: 80%;
-         font-size: .92rem;
-      }
-   
-      h1 {
-         width: 100%;
-         text-align: center;
-         font-size: 2.625rem;
-         font-weight: 700;
-         color: #1166C0;
-         margin-bottom: -1.4rem;
-      }
-   
-      span.name {
-         color: white;
-         font-size: 2.65rem;
-         font-weight: 700;
-      }
-   
-      #hello-intro p {
-         width: 100%;
-         padding-top: 20px;
-         margin: 0 auto;
-      }
-   
-      .intro-links {
-         display: flex;
-         flex-direction: column;
-         width: 100%;
-         margin: 25px auto;
-         align-items: center;
-         justify-content: center;
-         font-size: 1.2rem;
-      }
-   
-      .hire {
-         margin: 14px 0;
-      }
-   
-      a.hire,
-      .resume-cta {
-         width: 100%;
-         margin-right: 0;
-   
-         &::after {
-            width: 92%;
-         }
-      }
-   
-      .intro-img {
-         width: 85%;
-         height: auto;
-         margin: 2rem 0;
-      }
-   
-      #about-me {
-         display: flex;
-         flex-direction: column-reverse;
-         justify-content: center;
-         margin: 1rem auto 1rem;
-         width: 80%;
-      }
-   
-      .about-text h2 {
-         font-size: 2rem;
-      }
-   
-      div.about-img {
-         display: none;
-      }
-   
-      li.skills {
-         margin-left: -1rem;
-         font-size: 1.55rem;
-      }
-   
-      ul.skills {
-         margin-left: 1rem;
-      }
-   
-      .project-header {
-         font-size: 1.6rem;
-         margin-top: 2rem;
-      }
-   
-      .project-container {
-         margin-bottom: 0;
-      }
-   
-      .content {
-         font-size: 1rem;
-      }
-   
-      .button {
-         width: 60%;
-         padding: .6rem;
-         border: .05rem solid var(--blue-text);
-      }
-   
-      h2.name {
-         font-size: 1.4rem;
-         text-align: center;
-         padding: 0;
-      }
-   
-      h3 {
-         font-size: 1rem;
-      }
-   
-      .project-item {
-         height: 18rem;
-      }
+   div.lang-links {
+      right: 0;
+      margin-left: 0rem;
+      gap: .2rem;
+   }
 
-      /* section#bottom {
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         width: 100%;
-         margin: 0 auto;
-         margin-left: 1rem;
-      } */
-   
-      section#bottom {
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         width: 90%;
-         margin: 0 auto;
-         /* margin-left: 2rem; */
+   #hello-intro {
+      width: 100%;
+      margin: 80px auto 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+   }
+
+   div.intro-text {
+      width: 80%;
+      font-size: .92rem;
+   }
+
+   h1 {
+      width: 100%;
+      text-align: center;
+      font-size: 2.625rem;
+      font-weight: 700;
+      color: #1166C0;
+      margin-bottom: -1.4rem;
+   }
+
+   span.name {
+      color: white;
+      font-size: 2.65rem;
+      font-weight: 700;
+   }
+
+   #hello-intro p {
+      width: 100%;
+      padding-top: 20px;
+      margin: 0 auto;
+   }
+
+   .intro-links {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 25px auto;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+   }
+
+   .hire {
+      margin: 14px 0;
+   }
+
+   a.hire,
+   .resume-cta {
+      width: 100%;
+      margin-right: 0;
+
+      &::after {
+         width: 92%;
       }
-   
-      div.bottom-text {
-         width: auto;
-         margin-left: 2rem;
-      }
-   
-      #bottom p {
-         width: 90%;
-      }
-   
-      .social-icons {
-         font-size: 2rem;
-         text-align: center;
-         margin-bottom: 1rem;
-      }
-   
-      .circle2-background {
-         display: none;
-      }
-   
-      .box {
-         margin: 0 auto 2rem;
-         width: 100%;
-         height: 480px;
-         box-shadow: none;
-      }
-   
-      form {
-         width: 100%;
-      }
-   
-      .box input {
-         padding: .84rem;
-      }
-   
-      button {
-         padding: .4rem;
-      }
-   
-      /* Hides the pseudo-elements */
-      .box::before,
-      .box::after {
-         display: none;
-      }
-   
-      /* Sets background to transparent */
-      .box {
-         border-radius: 0;
-         border: none;
-      }
-   
-      .box form {
-         background-color: none;
-         border-radius: 0;
-         border: none;
-         /* padding: 2.5rem auto; */
-      }
-   
-      .rights {
-         margin-right: 2rem;
-         font-size: .6rem;
-      }
+   }
+
+   .intro-img {
+      width: 85%;
+      height: auto;
+      margin: 2rem 0;
+   }
+
+   #about-me {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      margin: 1rem auto 1rem;
+      width: 80%;
+   }
+
+   .about-text h2 {
+      font-size: 2rem;
+   }
+
+   div.about-img {
+      display: none;
+   }
+
+   li.skills {
+      margin-left: -1rem;
+      font-size: 1.55rem;
+   }
+
+   ul.skills {
+      margin-left: 1rem;
+   }
+
+   .project-header {
+      font-size: 1.6rem;
+      margin-top: 2rem;
+   }
+
+   .project-container {
+      margin-bottom: 0;
+   }
+
+   .content {
+      font-size: 1rem;
+   }
+
+   .button {
+      width: 60%;
+      padding: .6rem;
+      border: .05rem solid var(--blue-text);
+   }
+
+   h2.name {
+      font-size: 1.4rem;
+      text-align: center;
+      padding: 0;
+   }
+
+   h3 {
+      font-size: 1rem;
+   }
+
+   .project-item {
+      height: 18rem;
+   }
+
+   section#bottom {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 90%;
+      margin: 0 auto;
+   }
+
+   div.bottom-text {
+      width: auto;
+      margin-left: 2rem;
+   }
+
+   #bottom p {
+      width: 90%;
+   }
+
+   .social-icons {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 1rem;
+   }
+
+   .circle2-background {
+      display: none;
+   }
+
+   .box {
+      margin: 0 auto 2rem;
+      width: 100%;
+      height: 480px;
+      box-shadow: none;
+   }
+
+   form {
+      width: 100%;
+   }
+
+   .box input {
+      padding: .84rem;
+   }
+
+   button {
+      padding: .4rem;
+   }
+
+   /* Hides the pseudo-elements */
+   .box::before,
+   .box::after {
+      display: none;
+   }
+
+   /* Sets background to transparent */
+   .box {
+      border-radius: 0;
+      border: none;
+   }
+
+   .box form {
+      background-color: none;
+      border-radius: 0;
+      border: none;
+      /* padding: 2.5rem auto; */
+   }
+
+   .rights {
+      margin-right: 2rem;
+      font-size: .6rem;
+   }
 }
 
 /* Media Query  Styles for viewport width less than or equal to 391px */
 @media (max-width: 391px) {
-   /* body {
-      width: 100%;
-   } */
-
    img.logo {
       margin: 0 1.2rem 0 .4rem;
       width: 2.5rem;
@@ -1387,7 +1357,6 @@ footer {
    
    .nav ul {
       font-size: .6rem;
-      /* margin-right: 0em; */
       margin-right: .0rem;
       gap: .6rem;
    }
@@ -1395,10 +1364,6 @@ footer {
    .nav li {
       font-size: .65rem;
    }
-
-   /* .lang-links {
-      margin-left: 1.6rem;
-   } */
 
    #hello-intro {
       width: 100%;
@@ -1526,7 +1491,6 @@ footer {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      /* width: 100%; */
       margin: 0 auto;
       margin-left: 1rem;
    }
