@@ -48,7 +48,7 @@ html {
 img.logo {
    width: 90px;
    height: 90px;
-   margin-left: 8em;
+   margin-left: 8rem;
    border-radius: 50%;
 }
 
@@ -523,7 +523,7 @@ h3, h4 {
 /* Bottom Section */
 section#bottom {
    margin: 8rem;
-   width: 80%;
+   width: 88%;
    display: flex;
    justify-content: space-around;
    align-items: top;
@@ -531,8 +531,9 @@ section#bottom {
 }
 
 .bottom-text {
-   width: auto;
+   width: 40%;
    margin-top: .4em;
+   margin-right: 1.4rem;
 }
 
 #bottom h2 {
@@ -541,12 +542,10 @@ section#bottom {
 }
 
 #bottom p {
-   width: 33em;
-   margin-top: .5em;
-   margin-bottom: 1em;
-   font-size: 1.25em;
+   margin-top: .5rem;
+   margin-bottom: 1rem;
+   font-size: 1.25rem;
    color: var(--gray-text);
-   line-height: 1.2em;
 }
 
 .social-icons {
@@ -600,7 +599,7 @@ section#bottom {
 /* Form */
 .box {
    margin: 0 auto;
-   margin-right: 0;
+   margin-right: 2rem;
    position: relative;
    align-items: center;
    width: 780px;
@@ -911,14 +910,14 @@ footer {
 
 /* Style for the copyright notice */
 .rights {
-   margin-right: 8em;
+   margin-right: 4rem;
    color: #315569;
    font-size: 14px;
 }
 
 
 /* Media query for screens larger than 1620px */
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
    body {
       width: 100%;
       font-size: 1rem;
@@ -963,35 +962,23 @@ footer {
    }
 
    section#bottom {
-      width: 86%;
+      width: 90%;
       margin: 5rem auto;
    }
 
    .bottom-text {
-      width: 70%;
+      width: 80%;
       padding-right: 0;
    }
 
    #bottom p {
-      width: 60%;
+      width: 80%;
       margin-top: .25rem;
-      width: auto;
    } 
 
    .box {
       height: 450px;
       width: 800px;
-   }
-}
-
-
-/* Media @1435 */
-/* @media (min-width: 935px) {
-   .project-container {
-      width: 100%;
-   }
-   .project-item {
-
    }
 } */
 
@@ -1084,7 +1071,7 @@ footer {
 
    div.bottom-text {
       width: auto;
-      margin-left: 1rem;
+      margin-left: 2rem;
    }
 
    #bottom p {
@@ -1140,39 +1127,41 @@ footer {
    }
 
    .rights {
-      /* margin-right: 2.8em; */
       font-size: .6rem;
    }
 }
 
 @media (min-width: 391px) and (max-width: 766px) {
-   body {
+   /* body {
          width: 100%;
-      }
-   
-      img.logo {
-         margin: 0 1rem 0 .8rem;
-         width: 3rem;
-         height: 3rem;
-      }
-   
-      .nav {
-         /* justify-content: left; */
-      }
-   
-      /* .nav ul {
-         font-size: .6rem;
-         margin-left: 1rem;
-         margin-right: .0rem;
-         gap: 1.6rem;
       } */
    
-      .nav li {
-         font-size: .8rem;
+      img.logo {
+         margin: 0 .8rem 0rem 1rem;
+         width: 4rem;
+         height: 4rem;
       }
+      
+      .nav li {
+         font-size: .90rem;
+         margin-right: 1rem;
+      }
+
+      .nav ul {
+         margin-right: 0;
+         gap: .2rem;
+      }
+
+      /* a#about {
+         display: flex;
+         width: 5rem;
+      } */
    
-      .lang-links {
+      div.lang-links {
+         /* margin-left: 2rem; */
+         right: 0;
          margin-left: 0rem;
+         gap: .2rem;
       }
    
       #hello-intro {
@@ -1236,7 +1225,7 @@ footer {
       }
    
       .intro-img {
-         width: 100%;
+         width: 85%;
          height: auto;
          margin: 2rem 0;
       }
@@ -1298,18 +1287,28 @@ footer {
       .project-item {
          height: 18rem;
       }
-   
-      section#bottom {
+
+      /* section#bottom {
          display: flex;
          flex-direction: column;
          justify-content: center;
          width: 100%;
          margin: 0 auto;
+         margin-left: 1rem;
+      } */
+   
+      section#bottom {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         width: 90%;
+         margin: 0 auto;
+         /* margin-left: 2rem; */
       }
    
       div.bottom-text {
          width: auto;
-         margin-left: 1rem;
+         margin-left: 2rem;
       }
    
       #bottom p {
@@ -1365,16 +1364,16 @@ footer {
       }
    
       .rights {
-         /* margin-right: 2.8em; */
+         margin-right: 2rem;
          font-size: .6rem;
       }
 }
 
 /* Media Query  Styles for viewport width less than or equal to 391px */
 @media (max-width: 391px) {
-   body {
+   /* body {
       width: 100%;
-   }
+   } */
 
    img.logo {
       margin: 0 1.2rem 0 .4rem;
@@ -1382,8 +1381,8 @@ footer {
       height: 2.5rem;
    }
 
-   .nav {
-      justify-content: left;
+   .nav-bar {
+      margin-right: 2rem;
    }
    
    .nav ul {
@@ -1392,14 +1391,14 @@ footer {
       margin-right: .0rem;
       gap: .6rem;
    }
-
+   
    .nav li {
       font-size: .65rem;
    }
 
-   .lang-links {
+   /* .lang-links {
       margin-left: 1.6rem;
-   }
+   } */
 
    #hello-intro {
       width: 100%;
@@ -1460,7 +1459,7 @@ footer {
    }
 
    .intro-img {
-      width: 100%;
+      width: 80%;
       height: auto;
       margin: 2rem 0;
    }
@@ -1489,7 +1488,7 @@ footer {
    ul.skills {
       margin-left: 1rem;
    }
-   
+
    .project-header {
       font-size: 1.6rem;
       margin-top: 2rem;
@@ -1527,23 +1526,24 @@ footer {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      width: 100%;
+      /* width: 100%; */
       margin: 0 auto;
-   }
-   
-   div.bottom-text {
-      width: auto;
       margin-left: 1rem;
    }
    
+   .bottom-text {
+      width: auto;
+      margin-left: 2rem;
+   }
+   
    #bottom p {
-      width: 90%;
+      width: 88%;
    }
    
    .social-icons {
-      font-size: 2rem;
+      font-size: 1.6rem;
       text-align: center;
-      margin-bottom: 1rem;
+      width: 88%;
    }
 
    .circle2-background {
@@ -1589,7 +1589,7 @@ footer {
    }
 
    .rights {
-      margin-right: 2.8em;
+      margin-right: 2rem;
       font-size: .6rem;
    }
 }
