@@ -114,6 +114,28 @@ img.logo {
    opacity: 1;
 }
 
+ul {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 6%;
+   list-style: none;
+   height: 8vh;
+   background-color: rgba(100, 100, 100, 0.2);
+}
+
+li a {
+   display: block;
+   color: #fff;
+   text-decoration: none;
+   font-size: 1.2rem;
+}
+
+li a:hover {
+   color: var(--blue-text);
+   font-weight: bolder;
+}
+
 /* Intro */
 #hello-intro {
    width: auto;
@@ -1131,11 +1153,28 @@ footer {
       width: 4rem;
       height: 4rem;
    }
+
+   #mobile-nav {
+      display: block;
+   }
+
+   .mobile-nav-bar {
+      display: block;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      z-index: 5;
+   }
+
+   .mobile-nav-bar ul {
+      background-color: rgba(0, 0, 0, 0.625);
+      height: 8vh;
+   }
    
-   .nav li {
+   /* .nav li {
       font-size: .90rem;
       margin-right: 1rem;
-   }
+   } */
 
    .nav ul {
       margin-right: 0;
