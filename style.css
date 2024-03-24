@@ -1433,6 +1433,39 @@ footer {
       font-size: .65rem;
    }
 
+   #mobile-nav {
+      position: relative;
+      display: block;
+      z-index: 9999;
+   }
+
+   .mobile-nav-bar {
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      z-index: 9999;
+   }
+
+   .mobile-nav-bar ul {
+      background-color: rgba(0, 0, 0, 0.625);
+      height: 8vh;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0;
+   }
+   
+   .mobile-nav-bar li {
+    list-style: none;
+   }
+
+   .mobile-nav-bar a {
+      display: block;
+      color: white;
+      width: 100%;
+      font-size: 1.4rem;
+   }
+   
    #hello-intro {
       width: 100%;
       margin: 80px auto 0px;
