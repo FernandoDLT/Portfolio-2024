@@ -1,3 +1,66 @@
+// THIS works for emails ONLY //
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.querySelector('form');
+    const box = document.querySelector('.box');
+    const card = document.querySelector('.card');
+    const emailInput = document.getElementById('email');
+    const subjectInput = document.getElementById('subject');
+    const messageInput = document.getElementById('message');
+    const dismissButton = document.querySelector('.dismiss');
+
+    if (form) {
+        emailInput.addEventListener('input', function () {
+            updateInputClass(emailInput);
+        });
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const formData = new FormData(form);
+            const email = formData.get('email');
+            const subject = formData.get('subject');
+            const message = formData.get('message');
+
+            fetch('/sendEmail', {
+                method: 'POST',
+                body: JSON.stringify({ email, subject, message }),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => response.text())
+            .then(responseText => {
+                console.log(responseText); // Output server response
+                if (responseText === 'Message sent!') {
+                    // Show success message card
+                    card.classList.remove('hide');
+                    // Reset form
+                    form.reset();
+                } else {
+                    console.error('Failed to send message');
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        });
+
+        function updateInputClass(inputElement) {
+            if (inputElement.value.trim() !== '') {
+                inputElement.classList.add('has-value');
+            } else {
+                inputElement.classList.remove('has-value');
+            }
+        }
+
+        dismissButton.addEventListener('click', function (event) {
+            // Hide success message card
+            card.classList.add('hide');
+            event.preventDefault();
+        });
+    } else {
+        console.error('Form not found');
+    }
+});
+
 // This works for the CARD message ONLY!!! //
 window.addEventListener('load', function () {
     const form = document.querySelector('form');
