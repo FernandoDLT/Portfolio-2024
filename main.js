@@ -1,4 +1,3 @@
-// THIS works for emails ONLY //
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.querySelector('form');
     const card = document.querySelector('.card');
@@ -58,7 +57,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-// This works for the CARD message ONLY!!! //
 window.addEventListener('load', function () {
     const form = document.querySelector('form');
     const box = document.querySelector('.box');
