@@ -54,3 +54,12 @@ app.listen(port, () => {
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html'); // Replace 'index.html' with the name of your HTML file
 });
+
+document.querySelector('.reset').addEventListener('click', reset);
+
+    if (yards === - 0) {
+        resultElement.textContent = 'Please enter yardage.'
+    }
+function reset() {
+    window.location.reload()
+}
