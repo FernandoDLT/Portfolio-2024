@@ -52,6 +52,7 @@ img.logo {
    border-radius: 50%;
 }
 
+/* Mobile nav bar */
 #mobile-nav {
    display: none;
 }
