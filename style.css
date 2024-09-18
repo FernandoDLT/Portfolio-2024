@@ -327,49 +327,137 @@ h1 {
 
 /* About Section */
 #about-me {
-   margin: 8em 3.5em 0 13em;
+   /* margin: 8em 3.5em 0 13em; */
+   margin: 8em auto;
    display: flex;
-   justify-content: space-between;
+   /* justify-content: space-between; */
    align-items: center;
+   /* height: 60vh; */
+   width: 76%;
+   overflow: hidden;
+   /* background-color: #10132e; */
+   /* background-color: #090a16; */
+   border-radius: 1rem;
 }
 
-div.about-img {
+/* Skills list */
+/* Adjust gap between items */
+/* list-style: none; */
+/* padding: 0; */
+/* grid-template-columns: repeat(auto-fit, minmax(74px, 1fr)); */
+/* Adjust column width as needed */
+/* .skills {
+   margin: 10px 40px 10px;
+   display: grid;
+   grid-gap: .6rem;
+} */
+
+
+/* background-color: #20233e; */
+/* padding: 1.2rem 2.2rem; */
+/* margin-bottom: 0 auto; */
+/* justify-content: center; */
+/* .skills li {
+   background-color: #0a0b11;
+   color: #C1C2D3;
+   padding: 20px 30px;
+   border-radius: 0.25rem;
+   text-align: center;
+   position: relative;
+   font-weight: 600;
+} */
+
+/* margin: 6.3px 0 1.3em .10em; */
+/* ul.skills {
+   margin-left: 25px;
+   color: var(--mid-gray);
+}
+
+li::marker {
+   color: var(--cool-blue);
+   font-size: 18px;
+} */
+
+
+
+/* Skills list */
+.skills {
+   margin: 10px 40px 10px;
+   display: grid;
+   font-size: 1.14rem;
+   grid-gap: .6rem;
+}
+
+/* Style the list items */
+.skills li {
+   background-color: #0a0b11;
+   color: #ffff;
+   padding: 20px 30px;
+   border-radius: 0.35rem;
+   text-align: left;
+   position: relative;
+   font-weight: 400;
+   list-style-position: inside;
+   /* Marker is now inside the li */
+   padding-left: 35px;
+   /* Adjust padding to create space for marker */
+}
+
+/* Style the marker */
+li::marker {
+   color: var(--cool-blue);
+   font-size: 18px;
+}
+
+/* ul.skills {
+   margin-left: 25px;
+   color: var(--mid-gray);
+} */
+
+/* .skills li.skills-sp {
+    font-weight: bold;
+} */
+
+/* div.about-img {
    width: 90%;
    height: 100%;
    overflow: hidden;
-}
+} */
 
-.about-img img {
+/* .about-img img {
    margin-left: 6rem;
    width: 60%;
    height: auto;
    object-fit: contain;
-}
+} */
 
 .about-text {
    color: var(--gray-text);
-   font-size: 1.1em;
+   font-size: 1.3em;
    font-weight: 100;
-   width: 100%;
+   width: 80%;
+   /* margin-left: 10px; */
    margin-bottom: 5px;
    line-height: 1.5em;
 }
 
 .about-text h2 {
+   font-size: 2em;
+   margin-bottom: .35em;
    color: #ffff;
-   font-size: 2.2em;
-   margin-bottom: .55em;
+   /* text-align: center; */
+   /* margin: 1rem 0 2rem 20px; */
 }
 
-li.skills {
+/* .skills li{
    color: #ffff;
    font-size: 1.15em;
    margin: 1.2em 0;
    list-style-type: none;
    position: relative;
-}
+} */
 
-li.skills::after {
+/* li.skills::after {
    content: "";
    display: block;
    border-bottom: .18em solid var(--cool-blue);
@@ -383,16 +471,7 @@ li.skills.sp::after {
    border-bottom: .18em solid var(--cool-blue);
    margin-top: .28em;
    width: 10.65rem;
-}
-
-ul.skills {
-   margin: 6.3px 0 1.3em .10em;
-   color: var(--mid-gray);
-}
-
-li::marker {
-   color: var(--cool-blue);
-}
+} */
 
 hr {
    border: none;
