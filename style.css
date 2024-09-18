@@ -390,24 +390,34 @@ li::marker {
 
 /* Style the list items */
 .skills li {
-   background-color: #0a0b11;
+   display: flex;
+   align-items: center;
+   background-color: #111831;
    color: #ffff;
    padding: 20px 30px;
    border-radius: 0.35rem;
-   text-align: left;
+   text-align: center;
    position: relative;
    font-weight: 400;
    list-style-position: inside;
-   /* Marker is now inside the li */
    padding-left: 35px;
-   /* Adjust padding to create space for marker */
 }
 
-/* Style the marker */
-li::marker {
+/* Manually create the bullet/marker */
+.skills li::before {
+   content: '•';
+   /* Customize your bullet here */
    color: var(--cool-blue);
    font-size: 18px;
+   margin-right: 10px;
+   /* Space between marker and text */
+   display: inline-block;
 }
+/* Style the marker */
+/* li::marker {
+   color: var(--cool-blue);
+   font-size: 18px;
+} */
 
 /* ul.skills {
    margin-left: 25px;
@@ -1026,11 +1036,11 @@ footer {
       margin-top: 128px;
    }
    
-   img.logo {
+   /* img.logo {
       margin-left: 4.4rem;
       width: 74px;
       height: 74px;
-   }
+   } */
 
    .nav ul {
       margin-right: 60px;
@@ -1123,11 +1133,41 @@ footer {
       }
    }
 
+   /* #about-me {
+      margin: 120px auto;
+   } */
+
    #about-me {
-      width: 90%;
-      margin: 8rem 0 0 3rem;
-      display: block;
+      width: 92%;
+      font-size: .88rem;
+      /* margin: 8rem 0 0 3rem; */
+      /* display: block; */
+      margin-top: 210px !important;
    }
+
+   ul.skills {
+      margin-left: 0;
+      /* margin-bottom: 1200px; */
+      font-size: 1.4;
+   } 
+
+   .skills li {
+      padding-left: 0;
+   }
+   
+   /* .skills {
+      margin: 10px 40px 10px;
+      display: grid;
+      padding: 5px 0px;
+      font-size: .98rem;
+      grid-gap: .4rem;
+   }
+
+   li::marker {
+      color: var(--cool-blue);
+      margin-right: 2px;
+      font-size: 14px;
+   } */
 
    .about-img img {
       display: none;
@@ -1141,8 +1181,7 @@ footer {
    }
 
    ul.skills {
-      font-size: 1.4;
-      margin-left: 1rem;
+      /* margin-left: 1rem; */
    }
 
    .project-header {
@@ -1358,9 +1397,13 @@ footer {
       flex-direction: column-reverse;
       justify-content: center;
       margin: 1rem auto 1rem;
-      width: 80%;
+      width: 92%;
+      font-size: .92rem;
    }
 
+   .about-text {
+      text-align: center;
+   }
    .about-text h2 {
       font-size: 2rem;
    }
@@ -1374,8 +1417,22 @@ footer {
       font-size: 1.55rem;
    }
 
+   .skills {
+      grid-template-columns: repeat(2, 1fr);
+      /* Create two columns */
+      grid-gap: 1rem;
+      /* Adjust gap between columns */
+   }
+
+   .skills li {
+      /* padding: 15px 20px; */
+      /* Adjust padding for better alignment in columns */
+   }
+
    ul.skills {
-      margin-left: 1rem;
+      /* margin-left: 1rem; */
+      margin: 50px 0;
+      /* width: 200px; */
    }
 
    .project-header {
@@ -1615,6 +1672,10 @@ footer {
       width: 80%;
    }
    
+   .about-text {
+      text-align: center;
+   }
+
    .about-text h2{
       font-size: 2rem;
    }
@@ -1629,7 +1690,7 @@ footer {
    }
 
    ul.skills {
-      margin-left: 1rem;
+      margin-top: 60px;
    }
 
    .project-header {
