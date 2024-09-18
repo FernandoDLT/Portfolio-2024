@@ -197,7 +197,7 @@ h1 {
    font-size: 1.25em;
    width: auto;
    margin-top: .25em;
-   line-height: 1.25em;
+   line-height: 1.25rem;
    margin: .40em 0 3em;
 }
 
@@ -325,67 +325,30 @@ h1 {
    }
 }
 
-/* About Section */
+/* About Me Section */
 #about-me {
-   /* margin: 8em 3.5em 0 13em; */
    margin: 8em auto;
    display: flex;
-   /* justify-content: space-between; */
+   justify-content: space-between;
    align-items: center;
-   /* height: 60vh; */
-   width: 76%;
+   width: 80%;
    overflow: hidden;
-   /* background-color: #10132e; */
-   /* background-color: #090a16; */
    border-radius: 1rem;
 }
 
-/* Skills list */
-/* Adjust gap between items */
-/* list-style: none; */
-/* padding: 0; */
-/* grid-template-columns: repeat(auto-fit, minmax(74px, 1fr)); */
-/* Adjust column width as needed */
-/* .skills {
-   margin: 10px 40px 10px;
-   display: grid;
-   grid-gap: .6rem;
-} */
-
-
-/* background-color: #20233e; */
-/* padding: 1.2rem 2.2rem; */
-/* margin-bottom: 0 auto; */
-/* justify-content: center; */
-/* .skills li {
-   background-color: #0a0b11;
-   color: #C1C2D3;
-   padding: 20px 30px;
-   border-radius: 0.25rem;
+.skills-set {
+   color: white;
    text-align: center;
-   position: relative;
-   font-weight: 600;
-} */
-
-/* margin: 6.3px 0 1.3em .10em; */
-/* ul.skills {
-   margin-left: 25px;
-   color: var(--mid-gray);
+   font-size: 1.46rem;
+   margin-bottom: 20px;
 }
-
-li::marker {
-   color: var(--cool-blue);
-   font-size: 18px;
-} */
-
-
 
 /* Skills list */
 .skills {
    margin: 10px 40px 10px;
    display: grid;
    font-size: 1.14rem;
-   grid-gap: .6rem;
+   grid-gap: .30rem;
 }
 
 /* Style the list items */
@@ -394,94 +357,40 @@ li::marker {
    align-items: center;
    background-color: #111831;
    color: #ffff;
-   padding: 20px 30px;
+   padding: 25px;
    border-radius: 0.35rem;
+   justify-content: center;
    text-align: center;
    position: relative;
    font-weight: 400;
+   list-style-type: none;
    list-style-position: inside;
-   padding-left: 35px;
 }
 
 /* Manually create the bullet/marker */
 .skills li::before {
    content: '•';
-   /* Customize your bullet here */
    color: var(--cool-blue);
    font-size: 18px;
    margin-right: 10px;
-   /* Space between marker and text */
    display: inline-block;
 }
-/* Style the marker */
-/* li::marker {
-   color: var(--cool-blue);
-   font-size: 18px;
-} */
-
-/* ul.skills {
-   margin-left: 25px;
-   color: var(--mid-gray);
-} */
-
-/* .skills li.skills-sp {
-    font-weight: bold;
-} */
-
-/* div.about-img {
-   width: 90%;
-   height: 100%;
-   overflow: hidden;
-} */
-
-/* .about-img img {
-   margin-left: 6rem;
-   width: 60%;
-   height: auto;
-   object-fit: contain;
-} */
 
 .about-text {
    color: var(--gray-text);
    font-size: 1.3em;
    font-weight: 100;
    width: 80%;
-   /* margin-left: 10px; */
    margin-bottom: 5px;
-   line-height: 1.5em;
+   line-height: 1.4rem;
 }
 
 .about-text h2 {
-   font-size: 2em;
-   margin-bottom: .35em;
+   margin-bottom: 1rem;
+   font-size: 1.5em;
+   font-weight: 100;
    color: #ffff;
-   /* text-align: center; */
-   /* margin: 1rem 0 2rem 20px; */
 }
-
-/* .skills li{
-   color: #ffff;
-   font-size: 1.15em;
-   margin: 1.2em 0;
-   list-style-type: none;
-   position: relative;
-} */
-
-/* li.skills::after {
-   content: "";
-   display: block;
-   border-bottom: .18em solid var(--cool-blue);
-   margin-top: .28em;
-   width: 5rem;
-}
-
-li.skills.sp::after {
-   content: "";
-   display: block;
-   border-bottom: .18em solid var(--cool-blue);
-   margin-top: .28em;
-   width: 10.65rem;
-} */
 
 hr {
    border: none;
@@ -493,7 +402,7 @@ hr {
 
 /* PROJECT SECTION */
 .project-header {
-   font-size: 3rem;
+   font-size: 3.6em;
    font-weight: 600;
    display: flex;
    align-items: center;
@@ -655,7 +564,7 @@ section#bottom {
 #bottom p {
    margin-top: .5rem;
    margin-bottom: 1rem;
-   font-size: 1.25rem;
+   font-size: 1.25em;
    color: var(--gray-text);
 }
 
@@ -1059,6 +968,15 @@ footer {
    .circle-background {
       position: absolute;
    }
+
+   #about-me {
+      margin: 5rem auto 0;
+   }
+
+   .project-header {
+      margin-top: 3rem;
+      font-size: 2.7em;
+   }
    
    .project-item {
       margin: 1.2rem;
@@ -1133,41 +1051,21 @@ footer {
       }
    }
 
-   /* #about-me {
-      margin: 120px auto;
-   } */
-
    #about-me {
       width: 92%;
       font-size: .88rem;
-      /* margin: 8rem 0 0 3rem; */
-      /* display: block; */
-      margin-top: 210px !important;
    }
 
-   ul.skills {
-      margin-left: 0;
-      /* margin-bottom: 1200px; */
-      font-size: 1.4;
-   } 
-
-   .skills li {
-      padding-left: 0;
-   }
-   
-   /* .skills {
-      margin: 10px 40px 10px;
-      display: grid;
-      padding: 5px 0px;
-      font-size: .98rem;
-      grid-gap: .4rem;
+   .skills-set {
+      font-size: 20px;
+      font-weight: 400;
    }
 
    li::marker {
       color: var(--cool-blue);
       margin-right: 2px;
       font-size: 14px;
-   } */
+   }
 
    .about-img img {
       display: none;
@@ -1180,12 +1078,9 @@ footer {
       color: white;
    }
 
-   ul.skills {
-      /* margin-left: 1rem; */
-   }
-
    .project-header {
-      margin-top: 5rem;
+      margin-top: 2rem;
+      font-size: 2.4em;
    }
 
    #bottom {
@@ -1389,19 +1284,60 @@ footer {
    .intro-img {
       width: 85%;
       height: auto;
-      margin: 2rem 0;
+      margin: 1rem 0;
    }
 
-   #about-me {
+      #about-me {
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         margin: 1rem auto 2.6rem;
+      }
+   
+      /* Ensure "My Skills" is centered and above the columns */
+      .skills-set {
+         grid-column: 1 / -1;
+         /* Span across all columns */
+         margin-bottom: 20px;
+         font-size: 1.6em;
+      }
+   
+      /* Set the skills list to display in two columns */
+      .skills {
+         grid-template-columns: repeat(2, 1fr);
+         width: auto;
+         justify-items: center;
+      }
+   
+      /* Ensure each skill item takes full width inside its column */
+      .skills li {
+         width: 100%;
+      }
+   
+      /* Adjust text in about section */
+      .about-text {
+         width: 100%;
+         text-align: center;
+         margin-top: 36px;
+         font-size: 1.16em;
+      }
+
+      .about-text h2 {
+         margin: 1.4rem;
+         font-size: 1.56em;
+      }
+
+   /* #about-me {
       display: flex;
       flex-direction: column-reverse;
       justify-content: center;
-      margin: 1rem auto 1rem;
+      margin: 1rem auto 3.8rem;
       width: 92%;
       font-size: .92rem;
    }
 
    .about-text {
+      margin: 0rem 0 4rem;
       text-align: center;
    }
    .about-text h2 {
@@ -1412,32 +1348,20 @@ footer {
       display: none;
    }
 
-   li.skills {
-      margin-left: -1rem;
-      font-size: 1.55rem;
+   .skills li {
+      font-size: 1.05rem;
+      align-items: center;
+      justify-content: center;
    }
 
    .skills {
       grid-template-columns: repeat(2, 1fr);
-      /* Create two columns */
       grid-gap: 1rem;
-      /* Adjust gap between columns */
-   }
-
-   .skills li {
-      /* padding: 15px 20px; */
-      /* Adjust padding for better alignment in columns */
-   }
-
-   ul.skills {
-      /* margin-left: 1rem; */
-      margin: 50px 0;
-      /* width: 200px; */
-   }
+   } */
 
    .project-header {
-      font-size: 1.6rem;
-      margin-top: 2rem;
+      font-size: 2rem;
+      margin-top: 2.8rem;
    }
 
    .project-container {
@@ -1484,6 +1408,7 @@ footer {
 
    #bottom p {
       width: 90%;
+      line-height: 1.25rem;
    }
 
    .social-icons {
@@ -1661,7 +1586,7 @@ footer {
    .intro-img {
       width: 80%;
       height: auto;
-      margin: 2rem 0;
+      margin: 1rem;
    }
 
    #about-me {
@@ -1669,28 +1594,31 @@ footer {
       flex-direction: column-reverse;
       justify-content: center;
       margin: 1rem auto 1rem;
-      width: 80%;
+      width: 100%;
    }
    
    .about-text {
       text-align: center;
+      line-height: .92em;
    }
 
    .about-text h2{
-      font-size: 2rem;
+      font-size: 1.3em;
+      margin-bottom: 20px;
+   }
+
+   .about-text p {
+      font-size: .86em;
+      width: 100%;
    }
 
    div.about-img {
       display: none;
    }
 
-   li.skills {
-      margin-left: -1rem;
-      font-size: 1.55rem;
-   }
-
    ul.skills {
-      margin-top: 60px;
+      /* margin-top: 44px; */
+      margin: 44px 20px;
    }
 
    .project-header {
@@ -1740,7 +1668,8 @@ footer {
    }
    
    #bottom p {
-      width: 88%;
+      width: 100%;
+      line-height: .92em;
    }
    
    .social-icons {
