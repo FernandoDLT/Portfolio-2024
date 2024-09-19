@@ -337,10 +337,11 @@ h1 {
 }
 
 .skills-set {
-   color: white;
    text-align: center;
-   font-size: 1.46rem;
    margin-bottom: 20px;
+   color: var(--cool-blue);
+   font-size: 1.46rem;
+   font-weight: 600;
 }
 
 /* Skills list */
@@ -387,9 +388,9 @@ h1 {
 
 .about-text h2 {
    margin-bottom: 1rem;
-   font-size: 1.5em;
-   font-weight: 100;
-   color: #ffff;
+   font-size: 1.88em;
+   font-weight: 600;
+   color: var(--cool-blue);
 }
 
 hr {
@@ -1665,9 +1666,12 @@ footer {
    .bottom-text {
       width: auto;
       margin-left: 2rem;
+      text-align: center;
+      /* margin: 2rem auto; */
    }
    
    #bottom p {
+      margin: 20px auto;
       width: 100%;
       line-height: .92em;
    }
@@ -1675,7 +1679,8 @@ footer {
    .social-icons {
       font-size: 1.6rem;
       text-align: center;
-      width: 88%;
+      justify-content: center;
+      /* width: 88%; */
    }
 
    .circle2-background {
