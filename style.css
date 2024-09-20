@@ -383,7 +383,7 @@ h1 {
 }
 
 .about-text p {
-   width: 80%;
+   /* width: 80%; */
    font-size: 1.25em;
    font-weight: 100;
    color: var(--gray-text);
@@ -1047,13 +1047,14 @@ footer {
    }
 
    #about-me {
+      margin: 60px auto;
       width: 92%;
       font-size: .88rem;
    }
 
    .skills-set {
-      font-size: 20px;
-      font-weight: 400;
+      font-size: 1.4em;
+      font-weight: 600;
    }
 
    li::marker {
@@ -1283,46 +1284,53 @@ footer {
       margin: 1rem 0;
    }
 
-      #about-me {
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         margin: 1rem auto 2.6rem;
-      }
+   #about-me {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 1rem auto 2.6rem;
+   }
    
-      /* Ensure "My Skills" is centered and above the columns */
-      .skills-set {
-         grid-column: 1 / -1;
-         /* Span across all columns */
-         margin-bottom: 20px;
-         font-size: 1.6em;
-      }
+   /* Ensure "My Skills" is centered and above the columns */
+   .skills-set {
+      grid-column: 1 / -1;
+      /* Span across all columns */
+      margin-bottom: 20px;
+      font-size: 1.6em;
+   }
    
-      /* Set the skills list to display in two columns */
-      .skills {
-         grid-template-columns: repeat(2, 1fr);
-         width: auto;
-         justify-items: center;
-      }
-   
-      /* Ensure each skill item takes full width inside its column */
-      .skills li {
-         width: 100%;
-      }
-   
-      /* Adjust text in about section */
-      .about-text {
-         width: 100%;
-         text-align: center;
-         margin-top: 36px;
-         font-size: 1.16em;
-      }
+   /* Set the skills list to display in two columns */
+   .skills {
+      grid-template-columns: repeat(2, 1fr);
+      width: auto;
+      justify-items: center;
+   }
 
-      .about-text h2 {
-         margin: 1.4rem;
-         font-size: 1.56em;
-      }
+   /* Ensure each skill item takes full width inside its column */
+   .skills li {
+      width: 100%;
+   }
 
+   /* Adjust text in about section */
+   .about-text {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-top: 40px;
+      font-size: 1.16em;
+   }
+
+   .about-text h2 {
+      margin-top: 10px;
+      font-size: 1.56em;
+   }
+   
+   .about-text p {
+      font-size: 1em;
+      /* margin: 0rem 0 4rem; */
+      /* text-align: center; */
+   }
    /* #about-me {
       display: flex;
       flex-direction: column-reverse;
@@ -1332,10 +1340,6 @@ footer {
       font-size: .92rem;
    }
 
-   .about-text {
-      margin: 0rem 0 4rem;
-      text-align: center;
-   }
    .about-text h2 {
       font-size: 2rem;
    }
