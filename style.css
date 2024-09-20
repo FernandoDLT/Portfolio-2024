@@ -180,7 +180,7 @@ img.logo {
 }
 
 h1 {
-   font-size: 3.625rem;
+   font-size: 3.2rem;
    font-weight: 700;
    color: #1166C0;
    margin-bottom: -1.6rem;
@@ -188,17 +188,16 @@ h1 {
 
 .name {
    color: #ffff;
-   font-size: 3.7rem;
+   font-size: 3.3rem;
    font-weight: 700;
 }
 
 #hello-intro p {
-   color: var(--gray-text);
-   font-size: 1.25em;
+   margin: .40em 0 2em;
    width: auto;
-   margin-top: .25em;
-   line-height: 1.25rem;
-   margin: .40em 0 3em;
+   font-size: 1.25em;
+   color: var(--gray-text);
+   line-height: 1.3rem;
 }
 
 /* Intro Links */
@@ -327,7 +326,7 @@ h1 {
 
 /* About Me Section */
 #about-me {
-   margin: 8em auto;
+   margin: 1200px auto;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -340,7 +339,7 @@ h1 {
    text-align: center;
    margin-bottom: 20px;
    color: var(--cool-blue);
-   font-size: 1.46rem;
+   font-size: 1.4em;
    font-weight: 600;
 }
 
@@ -358,7 +357,7 @@ h1 {
    align-items: center;
    background-color: #111831;
    color: #ffff;
-   padding: 25px;
+   padding: 20px;
    border-radius: 0.35rem;
    justify-content: center;
    text-align: center;
@@ -377,20 +376,18 @@ h1 {
    display: inline-block;
 }
 
-.about-text {
-   color: var(--gray-text);
-   font-size: 1.3em;
-   font-weight: 100;
-   width: 80%;
-   margin-bottom: 5px;
-   line-height: 1.4rem;
+.about-text h2 {
+   margin-bottom: .2rem;
+   font-size: 2.2em;
+   color: var(--cool-blue);
 }
 
-.about-text h2 {
-   margin-bottom: 1rem;
-   font-size: 1.88em;
-   font-weight: 600;
-   color: var(--cool-blue);
+.about-text p {
+   width: 80%;
+   font-size: 1.25em;
+   font-weight: 100;
+   color: var(--gray-text);
+   line-height: 1.3rem;
 }
 
 hr {
@@ -403,7 +400,6 @@ hr {
 
 /* PROJECT SECTION */
 .project-header {
-   font-size: 3.6em;
    font-weight: 600;
    display: flex;
    align-items: center;
@@ -540,6 +536,10 @@ h3, h4 {
    font-size: 1.55em;
 }
 
+#bottom h4{
+   font-size: 1.8em;
+}
+
 
 /* Bottom Section */
 section#bottom {
@@ -557,16 +557,16 @@ section#bottom {
    margin-right: 1.4rem;
 }
 
-#bottom h2 {
+/* #bottom h2 {
    font-size: 2.22em;
    padding-bottom: .625em;
-}
+} */
 
 #bottom p {
-   margin-top: .5rem;
-   margin-bottom: 1rem;
+   margin: .5rem 0 1rem 0;
    font-size: 1.25em;
    color: var(--gray-text);
+   line-height: 1.3rem;
 }
 
 .social-icons {
@@ -945,12 +945,6 @@ footer {
       font-size: 1rem;
       margin-top: 128px;
    }
-   
-   /* img.logo {
-      margin-left: 4.4rem;
-      width: 74px;
-      height: 74px;
-   } */
 
    .nav ul {
       margin-right: 60px;
@@ -971,12 +965,12 @@ footer {
    }
 
    #about-me {
-      margin: 5rem auto 0;
+      margin: 50px auto 100px;
    }
 
    .project-header {
       margin-top: 3rem;
-      font-size: 2.7em;
+      font-size: 2.5em;
    }
    
    .project-item {
@@ -1256,6 +1250,7 @@ footer {
       width: 100%;
       padding-top: 20px;
       margin: 0 auto;
+      /* font-size: 1.25em; */
    }
 
    .intro-links {
@@ -1537,7 +1532,7 @@ footer {
    }
    
    div.intro-text {
-      width: 80%;
+      width: 100%;
       font-size: .92rem;
    }
    
@@ -1557,15 +1552,16 @@ footer {
    }
    
    #hello-intro p {
-      width: 100%;
-      padding-top: 20px;
       margin: 0 auto;  
+      width: 90%;
+      padding-top: 20px;
+      font-size: 1.18em;
    }
 
    .intro-links {
       display: flex;
       flex-direction: column;
-      width: 100%;
+      width: 78%;
       margin: 25px auto;
       align-items: center;
       justify-content: center;
@@ -1599,7 +1595,9 @@ footer {
    }
    
    .about-text {
+      width: 90%;
       text-align: center;
+      font-size: 1.18em;
       line-height: .92em;
    }
 
@@ -1673,6 +1671,7 @@ footer {
    #bottom p {
       margin: 20px auto;
       width: 100%;
+      font-size: 1.18em;
       line-height: .92em;
    }
    
