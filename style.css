@@ -367,7 +367,7 @@ h1 {
    list-style-position: inside;
 }
 
-/* Manually create the bullet/marker */
+/* Manually creates the bullet/marker */
 .skills li::before {
    content: '•';
    color: var(--cool-blue);
@@ -383,7 +383,7 @@ h1 {
 }
 
 .about-text p {
-   /* width: 80%; */
+   width: 80%;
    font-size: 1.25em;
    font-weight: 100;
    color: var(--gray-text);
@@ -422,13 +422,14 @@ hr {
 }
 
 .project-item {
-   width: 27.5rem;
-   height: 22.5em;
+   /* width: 17.5rem; */
+   width: 300px!important;
+   height: 16.5em;
    background-color: #fff;
    position: relative;
    box-shadow: -.25rem 0.4375rem .95rem rgba(129, 138, 221, 0.836);
    border-radius: 0.625rem;
-   margin: 3.125rem;
+   margin: 1.6rem!important;
    background-size: 100%;
    background-repeat: no-repeat;
 }
@@ -488,8 +489,8 @@ hr {
    box-shadow: 0 -0.0625em 1.875em rgba(0, 0, 0, 0.2);
    border-bottom-right-radius: 0.3125em;
    border-bottom-left-radius: 0.3125em;
-   transition: height .6s ease-in, background-color .6s ease-in;
    border-top: .05rem solid rgba(0, 0, 0, 0.2);
+   transition: height .6s ease-in, background-color .6s ease-in;
 }
 
 .text-container:hover {
@@ -503,7 +504,7 @@ hr {
 h2.name {
    margin: .225em 0.625em -.015em;
    color: var(--cool-blue);
-   font-size: 2.2em;
+   font-size: 1.7em;
    font-weight: 600;
    text-shadow: -2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -512,7 +513,7 @@ h2.name {
    padding: 2em 0.95em 1.25em;
    margin-top: 0.625em;
    color: white;
-   font-size: 1.35rem;
+   font-size: 1rem;
    font-weight: 600;
    text-shadow: -2px 2px 4px rgba(0, 0, 0, 1);
 }
@@ -521,7 +522,7 @@ h2.name {
    border: 2px solid var(--blue-text);
    width: 200px;
    box-shadow: -0.9375em 0.4375em 1.875em rgba(0, 0, 0, 0.2);
-   padding: 0.9375em;
+   padding: 0.4em;
    border-radius: 0.5125em;
    margin: 18px auto 25px;
    display: flex;
@@ -533,7 +534,7 @@ h2.name {
 h3, h4 {
    color: var(--cool-blue);
    list-style-type: none;
-   font-size: 1.55em;
+   font-size: 1.25em;
 }
 
 #bottom h4{
@@ -556,11 +557,6 @@ section#bottom {
    margin-top: .4em;
    margin-right: 1.4rem;
 }
-
-/* #bottom h2 {
-   font-size: 2.22em;
-   padding-bottom: .625em;
-} */
 
 #bottom p {
    margin: .5rem 0 1rem 0;
@@ -1181,17 +1177,17 @@ footer {
       background-color: rgba(0, 0, 0, 0.625);
       height: 8vh;
       display: flex;
-      /* Use flexbox to make the list items horizontal */
+      /* Uses flexbox to make the list items horizontal */
       justify-content: space-around;
-      /* Distribute items evenly along the main axis */
+      /* Distributes items evenly along the main axis */
       align-items: center;
-      /* Align items vertically in the center */
+      /* Aligns items vertically in the center */
       padding: 0;
-      /* Remove default padding */
+      /* Removes default padding */
    }
    
    .mobile-nav-bar li {
-    list-style: none; /* Remove default list styles */
+    list-style: none; /* Removes default list styles */
    }
 
    .mobile-nav-bar a {
@@ -1251,7 +1247,6 @@ footer {
       width: 100%;
       padding-top: 20px;
       margin: 0 auto;
-      /* font-size: 1.25em; */
    }
 
    .intro-links {
@@ -1328,36 +1323,8 @@ footer {
    
    .about-text p {
       font-size: 1em;
-      /* margin: 0rem 0 4rem; */
-      /* text-align: center; */
+      width: auto;
    }
-   /* #about-me {
-      display: flex;
-      flex-direction: column-reverse;
-      justify-content: center;
-      margin: 1rem auto 3.8rem;
-      width: 92%;
-      font-size: .92rem;
-   }
-
-   .about-text h2 {
-      font-size: 2rem;
-   }
-
-   div.about-img {
-      display: none;
-   }
-
-   .skills li {
-      font-size: 1.05rem;
-      align-items: center;
-      justify-content: center;
-   }
-
-   .skills {
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 1rem;
-   } */
 
    .project-header {
       font-size: 2rem;
@@ -1671,11 +1638,15 @@ footer {
       text-align: center;
       /* margin: 2rem auto; */
    }
+
+   #bottom h4 {
+      font-size: 1.4em;
+   }
    
    #bottom p {
-      margin: 20px auto;
+      margin: 6px auto 20px;
       width: 100%;
-      font-size: 1.18em;
+      font-size: 1.2em;
       line-height: .92em;
    }
    
