@@ -438,6 +438,10 @@ hr {
    background-image: url(images/huddle.png);
 }
 
+.golf-simulator {
+   background-image: url(images/golf-sim-confetti.PNG);
+}
+
 .base-project {
    background-image: url(images/base-apprl.png);
 }
@@ -472,10 +476,6 @@ hr {
 
 .clipboard-project {
    background-image: url(images/clipboard.png);
-}
-
-.golf-simulator {
-   background-image: url(images/golf-sim-confetti.PNG);
 }
 
 .text-container {
