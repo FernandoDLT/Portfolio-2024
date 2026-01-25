@@ -1289,7 +1289,7 @@ footer {
    }
 
    #about-me {
-      flex-direction: column-reverse;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       margin: 0rem auto 1rem;
