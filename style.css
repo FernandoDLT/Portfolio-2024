@@ -424,7 +424,6 @@ hr {
 }
 
 .project-item {
-   /* width: 17.5rem; */
    width: 300px!important;
    height: 16.5em;
    background-color: #fff;
@@ -1112,7 +1111,6 @@ footer {
    .social-icons {
       font-size: 1.7rem;
       text-align: center;
-      /* margin-bottom: 0rem; */
    }
 
    .circle2-background {
@@ -1393,7 +1391,6 @@ footer {
    .social-icons {
       font-size: 1.6rem;
       text-align: center;
-      /* margin-bottom: 1rem; */
    }
 
    .circle2-background {
@@ -1409,7 +1406,6 @@ footer {
 
    form {
       width: auto;
-      /* margin-bottom: 2rem; */
    }
 
    .box input {
@@ -1436,7 +1432,6 @@ footer {
       background-color: none;
       border-radius: 0;
       border: none;
-      /* padding: 1rem auto; */
       padding: 36px 30px;
 
    }
@@ -1601,7 +1596,6 @@ footer {
    }
 
    ul.skills {
-      /* margin-top: 44px; */
       margin: 44px 20px;
    }
 
@@ -1650,7 +1644,6 @@ footer {
       width: auto;
       margin-left: 2rem;
       text-align: center;
-      /* margin: 2rem auto; */
    }
 
    #bottom h4 {
@@ -1668,7 +1661,6 @@ footer {
       font-size: 1.4rem;
       text-align: center;
       justify-content: center;
-      /* width: 88%; */
    }
 
    .circle2-background {
