@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
@@ -14,25 +16,32 @@ app.use(express.static(__dirname));
 
 // Endpoint to handle form submission
 app.post('/sendEmail', (req, res) => {
-    const { email, subject, message } = req.body;
+    const { name, email, subject, message } = req.body;
 
     // Create nodemailer transporter
     const transporter = nodemailer.createTransport({
-        service: 'hotmail',
+        service: 'gmail',
         auth: {
-            user: 'ferchodlt1971@hotmail.com', // Your Hotmail address
-            pass: 'tiger1971' // Your Hotmail password or app-specific password
+            user: process.env.EMAIL_USER, // Your Gmail address
+            pass: process.env.EMAIL_PASS // Your Gmail password or app-specific password
         }
     });
 
     // Setup email data
     const mailOptions = {
-        from: 'ferchodlt1971@hotmail.com', // Sender address
-        to: 'ferchodlt1971@hotmail.com', // Your email address (recipient)
-        subject: subject,
-        text: `Sender's Email: ${email}\n\n${message}`
-    };
+        from: `"${name} via Portfolio" <${process.env.EMAIL_USER}>`,
+        to: process.env.EMAIL_USER,
+        replyTo: `"${name}" <${email}>`,
+        subject: `Portfolio Contact Form - ${name}`,
+        text: `
+        Name: ${name}
+        Email: ${email}
 
+        Message:
+        ${message}
+    `
+    };
+    
     // Send email
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
